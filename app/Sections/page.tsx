@@ -143,6 +143,7 @@ export default function page() {
         </div>
       </div>
 
+      {/* fourth section of lander page */}
       <div className={styles.fourthsection}>
         <div className={styles.faq}>
 
@@ -182,7 +183,7 @@ export default function page() {
         </div>
       </div>
 
-
+      {/* footer section of lander page */}
       <div>
         <div className={styles.footer}>
 
@@ -219,7 +220,7 @@ export default function page() {
           </div>
 
           <div className={styles.terms}>
-            <p>Terms of use</p>
+            <p className={styles.use}>Terms of use</p>
             <p>Privacy & Other policies</p>
           </div>
 
