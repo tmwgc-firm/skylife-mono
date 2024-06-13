@@ -37,6 +37,7 @@
 .roadmap {
     display: grid;
     grid-auto-flow: row;
+    padding:20px;
 }
 
 .route {
@@ -89,6 +90,18 @@
     line-height: 16.42px;
 }
 
+.grid1:hover, .grid2:hover {
+    background-color: #00A9FF;
+    color: #FFFFFF;
+}
+
+.grid1:hover p, .grid1:hover h3, .grid2:hover p, .grid2:hover h3 {
+    color: #FFFFFF; /* Change text color on hover */
+}
+
+.grid1:hover img, .grid2:hover img {
+    filter: brightness(0) invert(1); /* Inverts the image colors */
+}
 
 /* third section css */
 .thirdsection {
