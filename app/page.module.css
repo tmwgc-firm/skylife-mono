@@ -44,7 +44,12 @@
 .specialheading {
     color: #00A9FF;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 16.42px;
+    padding: 5px 0px 5px 0px;
+    border-top: 1px solid #00A9FF;  /* Add a top border */
+    border-bottom: 1px solid #00A9FF;  /* Add a bottom border */
+    display: inline-block;  /* Ensure the borders fit the text length */
 }
 
 .first_section {
@@ -65,5 +70,12 @@
 .heropara {
     overflow-wrap: break-word;
     max-width: 24rem;
+}
+
+.getintouch {
+    color: #00A9FF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.42px
 }
 
