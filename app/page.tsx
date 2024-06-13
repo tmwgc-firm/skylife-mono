@@ -8,15 +8,6 @@ export default function Home() {
       <div className={styles.header}>
         <Image src='/Logo.svg' alt="Logo image" height={40} width={190} />
 
-        {/* <div className={styles.controls}>
-            <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>FAQ</li>
-            </ul>
-
-        </div> */}
-
         <button>Get in touch</button>
       </div>
 
@@ -33,7 +24,7 @@ export default function Home() {
           <p>Explore our website to learn more about our products and how we can help you achieve peace of mind and financial security.</p>
         </div>
 
-        <p className={styles.specialheading}>Get in touch <Image src='/Arrow 1.svg' alt="arrow image" width={24} height={12} /></p>
+        <p className={styles.getintouch}>Get in touch <Image src='/Arrow 1.svg' alt="arrow image" width={24} height={12} /></p>
       </div>
 
       
