@@ -3,93 +3,40 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={styles.hero}>
+      {/* Header of the main page */}
+      <div className={styles.header}>
+        <Image src='/Logo.svg' alt="Logo image" height={40} width={190} />
+
+        {/* <div className={styles.controls}>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>FAQ</li>
+            </ul>
+
+        </div> */}
+
+        <button>Get in touch</button>
+      </div>
+
+      {/* first section of hero page */}
+      <div className={styles.first_section}>
+
+        <p className={styles.specialheading}>WELCOME TO SKY FINANCIAL</p>
+
+        <h1>Life's a Journey,&nbsp; Fly Confidently&nbsp; with our&nbsp; Protection<span className={styles.dot}>.</span></h1>
+
+
+        <div className={styles.heropara}>
+          <p>At Sky Financial, we specialize in providing comprehensive&nbsp; life insurance and annuity options tailored to meet the&nbsp; unique needs of individuals across all age groups and&nbsp; income levels. As a licensed provider in all 50 states, we&nbsp; are dedicated to helping clients nationwide secure their&nbsp; financial futures with innovative insurance solutions.</p>
+          <p>Explore our website to learn more about our products and how we can help you achieve peace of mind and financial security.</p>
         </div>
+
+        <p className={styles.specialheading}>Get in touch <Image src='/Arrow 1.svg' alt="arrow image" width={24} height={12} /></p>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      
+    </div>
   );
 }
