@@ -5,16 +5,28 @@
     grid-auto-flow: row;
 }
 
+.whoweare {
+    display: grid;
+    width: 632px;
+    height: 360px;
+}
+
+.specialheading {
+    color: #00A9FF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.42px;
+    padding: 5px 0px 5px 0px;
+    border-top: 1px solid #00A9FF;  /* Add a top border */
+    border-bottom: 1px solid #00A9FF;  /* Add a bottom border */
+    display: inline-block;  /* Ensure the borders fit the text length */
+}
+
 .aboutus {
     display: grid;
     grid-auto-flow: column;
 }
 
-.line {
-    width: 112px;
-    height: 16px;
-    color:#00A9FF;
-}
 
 .dot {
     color: #00A9FF;
@@ -33,7 +45,7 @@
     height: 130px;
     justify-self: center;
     border-bottom: none;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 
 .grids {
@@ -73,17 +85,31 @@
     place-self: center;
 }
 
+.subhead {
+    line-height: 16.42px;
+}
+
+
 /* third section css */
 .thirdsection {
     display: grid;
     grid-auto-flow: column;
     background-color: #ECFAFF;
     align-items: center;
+    padding: 50px;
+}
+
+.getstarted p {
+    max-width: 30rem;
 }
 
 .inline {
     color: #00A9FF;
     font-weight: 600;
+}
+
+.right {
+    display: grid;
 }
 
 .form {
@@ -92,4 +118,151 @@
     border: 1px solid #CBECFD;
     width: 688px;
     height: 360px;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.namesub {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-items: center;
+}
+
+.name {
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    height: 44px;
+    width: 300px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.name > input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.formline {
+    height: 20px;
+    background-color: #AAAAAA;
+    width: 1px;
+    align-self: center;
+}
+
+.emailphone {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.name img {
+    justify-self: center;
+    align-self: center;
+}
+
+.message {
+    align-content: center;
+    justify-self: center;
+}
+
+.message > input {
+    outline: none;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    height:80px;
+    width: 624px;
+}
+
+.form > button {
+    background-color: #FFFFFF;
+    color: #00A9FF;
+    border: 1px solid var(--Primary, #00A9FF);
+    border-radius: 10px;
+    width: 624px;
+    height: 40px;
+    align-content: center;
+    justify-self: center;
+}
+
+/* fourth section */
+.fourthsection {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.faq {
+    display: grid;
+    grid-auto-flow: row;
+    height: 528px;
+    width: 688px;
+}
+
+.rightsection {
+    display: grid;
+    grid-auto-flow: row;
+    width: 464px;
+    height: 780px;
+    text-align-last: center;
+}
+
+.question {
+    display: grid;
+    grid-auto-flow: column;
+    border-radius: 10px;
+    border: 1px solid #CBECFD;
+    width:688px;
+    height: 72px;
+    justify-content: space-around;
+}
+
+/* footer */
+
+.footer {
+    border-top: 1px solid var(--Primary, #00A9FF);
+    height: 302px;
+    width: 1440px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.footer img {
+    justify-self: center;
+}
+
+.footerline {
+    height: 108px;
+    background-color: #CBECFD;
+    width:1px;
+}
+
+.footer > p {
+    height: 108px;
+    width: 642px;
+}
+
+.info {
+    width: 324px;
+    height: 108px;
+}
+
+.details {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+}
+
+.details img {
+    padding: 10px 10px 0px 0px;
+}
+.details > p {
+    font-size: 12px;
+}
+
+.bottom {
+    background-color: #00A9FF;
+    height: 66px;
 }
