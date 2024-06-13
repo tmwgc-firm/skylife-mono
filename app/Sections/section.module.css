@@ -1,0 +1,95 @@
+/* second section */
+
+.secondsection {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.aboutus {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.line {
+    width: 112px;
+    height: 16px;
+    color:#00A9FF;
+}
+
+.dot {
+    color: #00A9FF;
+}
+
+/* roadmap of second section */
+
+.roadmap {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.route {
+    border: 1px solid var(--Primary, #00A9FF);
+    width:880px;
+    height: 130px;
+    justify-self: center;
+    border-bottom: none;
+    border-radius: 1px;
+}
+
+.grids {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.grid1 {
+    display: grid;
+    grid-auto-flow: row;
+    width: 400px;
+    height: 586px;
+    border: 1px solid var(--Primary, #00A9FF);
+    border-radius: 10px;
+}
+
+.grid2 {
+    display: grid;
+    grid-auto-flow: row;
+    width: 400px;
+    height: 496px;
+    border: 1px solid var(--Primary, #00A9FF);
+    border-radius: 10px;
+    align-self: center;
+}
+
+.text {
+    height: 506px;
+    width: 320px;
+    align-content: center;
+    justify-self: center;
+}
+
+.text2 {
+    height: 416px;
+    width: 320px;
+    place-self: center;
+}
+
+/* third section css */
+.thirdsection {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #ECFAFF;
+    align-items: center;
+}
+
+.inline {
+    color: #00A9FF;
+    font-weight: 600;
+}
+
+.form {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid #CBECFD;
+    width: 688px;
+    height: 360px;
+}
