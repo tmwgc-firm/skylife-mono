@@ -223,8 +223,6 @@
 
 .footer {
     border-top: 1px solid var(--Primary, #00A9FF);
-    height: 302px;
-    width: 1440px;
     display: grid;
     grid-auto-flow: column;
 }
@@ -265,4 +263,29 @@
 .bottom {
     background-color: #00A9FF;
     height: 66px;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+}
+
+.copy {
+    margin-left: 20px;
+}
+
+.terms {
+    display: grid;
+    grid-auto-flow: column;
+    
+}
+
+.terms > p {
+    margin: 14px;
+}
+
+.bottom p {
+    color: #FFFFFF;
+}
+
+.use {
+    justify-self: right;
 }
