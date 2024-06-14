@@ -1,16 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Headerpage from "./Header/page";
+
 
 export default function Home() {
   return (
     <div className={styles.hero}>
-      {/* Header of the main page */}
-      <div className={styles.header}>
-        <Image src='/Logo.svg' alt="Logo image" height={40} width={190} />
-
-        <button>Get in touch</button>
-      </div>
-
+      < Headerpage />
       {/* first section of hero page */}
       <div className={styles.first_section}>
 
