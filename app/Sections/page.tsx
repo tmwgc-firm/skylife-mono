@@ -1,8 +1,55 @@
+'use client'
 import Image from "next/image";
+import { useState, ChangeEvent, FormEvent } from "react";
 import styles from "./section.module.css";
 import FAQSection from "../Faq/page";
 
+interface FormData {
+  name: string;
+  subject: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
 export default function page() {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    subject: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert(result.message);  // 'Email sent successfully!'
+    } else {
+      alert(`Failed to send email: ${result.message}`);
+      console.error(result.error);
+    }
+  };
+
   return (
     // second section of lander page
     <div>
@@ -27,8 +74,10 @@ export default function page() {
 
         <div className={styles.roadmap}>
           <div className={styles.route}>
-
+            <span className={styles.middleline}></span>
           </div>
+
+
 
           <div className={styles.grids}>
             <div className={styles.grid1}>
@@ -49,7 +98,7 @@ export default function page() {
             </div>
 
             <div className={styles.grid2}>
-              
+
               <div className={styles.text2}>
                 <Image src={'/grid2.svg'} alt="insurance picture" width={64} height={64} />
 
@@ -102,19 +151,29 @@ export default function page() {
 
         </div>
 
+        {/* form data */}
         <div className={styles.right}>
-          <div className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.namesub}>
               <div className={styles.name}>
                 <Image src={'/user.svg'} alt="user image" width={20} height={20} />
                 <div className={styles.formline}></div>
-                <input placeholder="Name" />
+                <input
+                  placeholder="Name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange} />
               </div>
 
               <div className={styles.name}>
                 <Image src={'/user.svg'} alt="user image" width={20} height={20} />
                 <div className={styles.formline}></div>
-                <input placeholder="subject" />
+                <input
+                  placeholder="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
               </div>
             </div>
 
@@ -122,26 +181,41 @@ export default function page() {
               <div className={styles.name}>
                 <Image src={'/mail.svg'} alt="mail image" width={20} height={20} />
                 <div className={styles.formline}></div>
-                <input placeholder="E-mail" />
+                <input
+                  placeholder="E-mail"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
               </div>
 
               <div className={styles.name}>
                 <Image src={'/phone.svg'} alt="phone image" width={20} height={20} />
                 <div className={styles.formline}></div>
-                <input placeholder="phone" />
+                <input
+                  placeholder="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
               </div>
 
             </div>
 
             <div className={styles.message}>
-              <input placeholder="Message" />
+              <input
+                placeholder="Message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+              />
             </div>
 
-            <button>Get in touch</button>
+            <button type="submit">Get in touch</button>
 
 
 
-          </div>
+          </form>
         </div>
       </div>
 
