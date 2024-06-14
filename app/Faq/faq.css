@@ -1,0 +1,85 @@
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 464px); /* Adjust as needed */
+  gap: 20px;
+  width: 100%;
+}
+
+.faq {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px;
+  max-height: 528px;
+  overflow-y: auto;
+  width: 688px;
+  align-self: center;
+}
+
+.question {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Split the question and icon */
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #CBECFD;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 66px;
+}
+
+.question:hover {
+  background-color: #CBECFD;
+}
+
+.question p {
+  margin: 0;
+  font-weight: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.answer {
+  grid-column: 1 / -1; /* Span the answer across the full width of the question */
+  padding: 10px;
+  background-color: #CBECFD;
+  border-radius: 10px;
+  border: 1px solid #CBECFD;
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.answer p {
+  margin: 0;
+}
+
+.rightsection {
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  align-self: start; /* Align to the start of the grid container */
+  /* margin-left: auto; Push to the right */
+}
+
+.rightSection h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rightSection p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.specialheading {
+  color: #00A9FF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.42px;
+  padding: 5px 0px 5px 0px;
+  border-top: 1px solid #00A9FF;  /* Add a top border */
+  border-bottom: 1px solid #00A9FF;  /* Add a bottom border */
+  display: inline-block;  /* Ensure the borders fit the text length */
+}
