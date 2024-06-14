@@ -1,0 +1,20 @@
+/* Header page css*/
+
+.header { 
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #CBECFD;
+    height: 70px;
+}
+
+.header > button {
+    background-color: #00A9FF;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 134px;
+    height: 40px;
+}
