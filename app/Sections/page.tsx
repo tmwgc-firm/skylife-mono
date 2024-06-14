@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./section.module.css";
+import FAQSection from "../Faq/page";
 
 export default function page() {
   return (
@@ -48,6 +49,7 @@ export default function page() {
             </div>
 
             <div className={styles.grid2}>
+              
               <div className={styles.text2}>
                 <Image src={'/grid2.svg'} alt="insurance picture" width={64} height={64} />
 
@@ -144,44 +146,7 @@ export default function page() {
       </div>
 
       {/* fourth section of lander page */}
-      <div className={styles.fourthsection}>
-        <div className={styles.faq}>
-
-          <div className={styles.question}>
-            <p>How much life insurance do I actually need?
-              <Image src={'/chevron-down.svg'} alt="chevron down image" width={24} height={24} /></p>
-          </div>
-          <div className={styles.question}>
-            <p>How can I be sure I'm getting the best rates?</p>
-            <Image src={'/chevron-down.svg'} alt="chevron down image" width={24} height={24} />
-          </div>
-          <div className={styles.question}>
-            <p>How long does it take to get approved for life insurance coverage?
-              <Image src={'/chevron-down.svg'} alt="chevron down image" width={24} height={24} /></p>
-          </div>
-          <div className={styles.question}>
-            <p>What happens if I outlive the term of my life insurance policy?
-              <Image src={'/chevron-down.svg'} alt="chevron down image" width={24} height={24} /></p>
-          </div>
-          <div className={styles.question}>
-            <p>How can I ensure my life insurance policy adequately protects my loved ones?</p>
-            <Image src={'/chevron-down.svg'} alt="chevron down image" width={24} height={24} />
-          </div>
-
-        </div>
-
-        <div className={styles.rightsection}>
-
-          <p className={styles.specialheading}>FREQUENTLY ASKED QUESTIONS</p>
-
-          <h2>Get the Answers You Need.</h2>
-
-          <p>Have questions about life insurance? Explore our FAQs for clear, concise answers to help you make informed decisions about your coverage options.</p>
-
-          <Image src={'/fourthsec.svg'} alt="a man thinking" height={536} width={360} />
-
-        </div>
-      </div>
+      < FAQSection />
 
       {/* footer section of lander page */}
       <div>
