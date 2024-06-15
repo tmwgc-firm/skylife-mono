@@ -1,8 +1,10 @@
 .faq-container {
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 464px); /* Adjust as needed */
+  /* grid-template-columns: 1fr minmax(auto, 464px); */
   gap: 20px;
-  width: 100%;
+  grid-auto-flow: column;
+  justify-content: center;
+  padding: 20px 20px 0px 20px;
 }
 
 .faq {
@@ -56,7 +58,8 @@
   display: grid;
   gap: 20px;
   text-align: center;
-  align-self: start; /* Align to the start of the grid container */
+  align-self: start; 
+  justify-items: center;
 }
 
 .rightSection h2 {
@@ -77,11 +80,15 @@
   font-weight: 500;
   line-height: 16.42px;
   padding: 5px 0px 5px 0px;
+  max-width: fit-content;
   border-top: 1px solid #00A9FF;  /* Add a top border */
   border-bottom: 1px solid #00A9FF;  /* Add a bottom border */
-  display: inline-block;  /* Ensure the borders fit the text length */
+  /* display: inline-block;  Ensure the borders fit the text length */
 }
 
+.dot {
+  color: #00A9FF;
+}
 .mainpage > img {
   display: none;
 }
@@ -90,7 +97,9 @@
 @media (max-width: 480px) {
 
   .faq-container {
-    grid-template-columns: 1fr; /* Full width for mobile */
+    /* grid-template-columns: 1fr;  */
+    display: grid;
+    grid-auto-flow: row;
     gap: 10px;
     padding: 20px; /* Add padding for better spacing */
   }
@@ -119,6 +128,7 @@
   .rightsection {
     grid-row: 1;
     width: 312px;
+    gap: 0;
     text-align: center; /* Center-align text in right section */
     margin-top: 20px; /* Increase top margin for separation */
   }
