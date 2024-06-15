@@ -39,7 +39,7 @@
     border: 1px solid #CBECFD;
     border-radius: 10px;
     max-width: 550px;
-    height: 95px;
+    height: 102px;
     padding: 15px;
 }
 
@@ -47,6 +47,33 @@
     border: 1px solid #CBECFD;
     border-radius: 10px;
     max-width: 550px;
-    height: 95px;
+    height: 102px;
     padding: 15px;
+}
+
+@media (max-width: 480px) {
+
+.subgrid {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.leftgrid {
+    padding: 5px;
+}
+
+.rightgrid{
+    padding: 5px;
+}
+
+.linkpage1{
+    margin: 5px;
+    display: block;
+}
+
+.minihead {
+    padding: 5px;
+}
 }
