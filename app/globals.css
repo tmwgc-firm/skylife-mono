@@ -9,11 +9,16 @@ li a {
 
 body {
     margin: 0;
-    /* font-family: 'Work Sans', sans-serif; */
+
     font-family: Arial, sans-serif;
 }
 
-h1, h2,h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Roboto Serif', serif;
     font-weight: 700;
     margin: 0;
@@ -26,20 +31,53 @@ h1 {
 
 h2 {
     font-size: 45px;
-    line-height:46.84px;
+    line-height: 46.84px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 22px;
 }
 
 p {
     font-family: Arial, sans-serif;
-    /* font-family: 'Work Sans', sans-serif; */
     font-size: 14px;
     color: #777777;
     font-weight: 500;
 
     line-height: 18px;
-    text-align: left;
+    /* text-align: left; */
 
 }
 
+a {
+    text-decoration: none;
+}
 
+@media (max-width: 480px) {
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Roboto Serif', serif;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 16px;
+        color: #777777;
+        font-family: Arial, sans-serif;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 28.1px;
+    }
+
+}
