@@ -17,7 +17,7 @@ export default function Home() {
 
           <p className={styles.specialheading}>WELCOME TO SKY FINANCIAL</p>
 
-          <h1>Life's a Journey,&nbsp; Fly Confidently&nbsp; with our&nbsp; Protection<span className={styles.dot}>.</span></h1>
+          <h1>Life&apos;s a Journey,&nbsp; Fly Confidently&nbsp; with our&nbsp; Protection<span className={styles.dot}>.</span></h1>
 
 
           <div className={styles.heropara}>

@@ -1,5 +1,6 @@
 import styles from "./terms.module.css";
 import Headerpage from "../Header/page";
+import Link from 'next/link'
 
 export default function page() {
     return (
@@ -7,7 +8,7 @@ export default function page() {
             <Headerpage />
             <div className={styles.terms}>
                 <div className={styles.minihead}>
-                    <p><span className={styles.dot}>Home  </span>&gt;  Privacy policy</p>
+                    <p><span className={styles.dot}><Link href='/'>Home  </Link></span>&gt;  Privacy policy</p>
 
 
                     <h2>Terms of use<span className={styles.dot}>.</span></h2>
