@@ -8,7 +8,7 @@ export default function page() {
             <Headerpage />
             <div className={styles.privacy}>
                 <div className={styles.minihead}>
-                    <p><span className={styles.dot}><Link href='/'>Home  </Link></span>&gt;   Privacy policy</p>
+                    <p><Link href='/' className={styles.dot}>Home  </Link> &gt;   Privacy policy</p>
 
 
                     <h2>Privacy & Other policies<span className={styles.dot}>.</span></h2>

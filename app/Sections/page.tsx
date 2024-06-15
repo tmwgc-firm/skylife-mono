@@ -78,7 +78,7 @@ export default function Sections() {
     <div>
       <div className={styles.secondsection}>
         <div className={styles.aboutus}>
-        <motion.div 
+         <motion.div 
             className={styles.Animation}
             key={currentImage}
             initial={{ opacity: 0 }}
@@ -92,7 +92,7 @@ export default function Sections() {
               height={443.55} 
               width={446.14} 
             />
-          </motion.div>
+          </motion.div> 
           
           <div className={styles.mobileanimate}>
             <Image src={'animate1-mob.svg'} alt="animation" height={340} width={312} />
@@ -181,9 +181,9 @@ export default function Sections() {
       <div className={styles.thirdsection}>
         <div className={styles.getstarted}>
 
-          <p className={styles.specialheading}>GET STARTED TODAY</p>
+          <p className={styles.specialheading1}>GET STARTED TODAY</p>
 
-          <h2>Ready to take the next step towards financial security?</h2>
+          <h2>Ready to take the next step towards financial security<span className={styles.dot}>?</span></h2>
 
           <p>Contact <span className={styles.inline}>SKY FINANCIAL</span> today to schedule a consultation with one of our experienced agents. We&apos;re here to answer your questions, address your concerns, and help you find the perfect insurance solutions for your needs.</p>
 
