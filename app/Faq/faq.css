@@ -102,7 +102,7 @@
   }
 
   .question {
-    grid-template-columns: 1fr; /* Stack question elements vertically */
+    grid-template-columns: 1fr auto; /* Stack question elements vertically */
     height: auto; /* Adjust height to fit content */
     padding: 10px; /* Increase padding for touch-friendly design */
     margin-bottom: 10px;
