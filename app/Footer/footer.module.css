@@ -99,6 +99,7 @@
 
 .bottom {
     grid-auto-flow: row;
+    height: 94px;
 }
 
 .terms {
