@@ -1,6 +1,6 @@
 /* Header page css*/
 
-.header { 
+.header {
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
@@ -8,7 +8,7 @@
     height: 70px;
 }
 
-.header > button {
+.header>button {
     background-color: #00A9FF;
     color: #FFFFFF;
     text-align: center;
@@ -17,4 +17,25 @@
     border-radius: 10px;
     width: 134px;
     height: 40px;
+}
+
+@media (max-width: 768px) {
+    .header>button {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        max-width: 480px;
+        justify-content: normal;
+    }
+
+    .header>button {
+        width: 105px;
+        height: 30px;
+        font-size: 12px;
+    }
 }

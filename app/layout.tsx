@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { Roboto_Serif, Work_Sans } from 'next/font/google';
+import { Roboto_Serif } from 'next/font/google';
 import "./globals.css";
-import Sections from "@/app/Sections/page"
+import Footerpage from "./Footer/page";
 
 const robotoSerif = Roboto_Serif({ weight: '700', subsets: ['latin'] });
-const workSans = Work_Sans({ weight: '400', subsets: ['latin'] });
-
 
 export const metadata: Metadata = {
   title: "Sky finance",
@@ -19,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${robotoSerif.className} ${workSans.className}`}>
+      <body className={`${robotoSerif.className}`}>
         {children}
-        <Sections />
+        < Footerpage />
         </body>
     </html>
   );

@@ -1,0 +1,51 @@
+.linkpage1 {
+    display: grid;
+    grid-auto-flow: row;
+    margin: 30px;
+}
+
+.privacy {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+
+}
+
+.minihead {
+    display: grid;
+    /* grid-auto-flow: row; */
+    padding: 20px;
+    
+}
+
+.dot {
+    color: #00A9FF;
+}
+
+.maingrid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+}
+
+.subgrid {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+.leftgrid {
+    border: 1px solid #CBECFD;
+    border-radius: 10px;
+    max-width: 550px;
+    height: 130px;
+    padding: 15px;
+}
+
+.rightgrid {
+    border: 1px solid #CBECFD;
+    border-radius: 10px;
+    max-width: 550px;
+    height: 130px;
+    padding: 15px;
+}

@@ -5,6 +5,10 @@
     grid-auto-flow: row;
 }
 
+.mobileanimate {
+    display: none;
+}
+
 .whoweare {
     display: grid;
     width: 632px;
@@ -17,9 +21,12 @@
     font-weight: 500;
     line-height: 16.42px;
     padding: 5px 0px 5px 0px;
-    border-top: 1px solid #00A9FF;  /* Add a top border */
-    border-bottom: 1px solid #00A9FF;  /* Add a bottom border */
-    display: inline-block;  /* Ensure the borders fit the text length */
+    border-top: 1px solid #00A9FF;
+    /* Add a top border */
+    border-bottom: 1px solid #00A9FF;
+    /* Add a bottom border */
+    display: inline-block;
+    /* Ensure the borders fit the text length */
 }
 
 .aboutus {
@@ -37,16 +44,22 @@
 .roadmap {
     display: grid;
     grid-auto-flow: row;
-    padding:20px;
+    padding: 20px;
 }
 
 .route {
     border: 1px solid var(--Primary, #00A9FF);
-    width:880px;
+    width: 880px;
     height: 130px;
     justify-self: center;
     border-bottom: none;
     border-radius: 5px;
+}
+
+.middleline {
+    height: 200px;
+    background-color: #00A9FF;
+    width: 1px;
 }
 
 .grids {
@@ -91,17 +104,24 @@
     line-height: 16.42px;
 }
 
-.grid1:hover, .grid2:hover {
+.grid1:hover,
+.grid2:hover {
     background-color: #00A9FF;
+    /* color: #FFFFFF; */
+}
+
+.grid1:hover p,
+.grid1:hover h3,
+.grid2:hover p,
+.grid2:hover h3 {
     color: #FFFFFF;
+    /* Change text color on hover */
 }
 
-.grid1:hover p, .grid1:hover h3, .grid2:hover p, .grid2:hover h3 {
-    color: #FFFFFF; /* Change text color on hover */
-}
-
-.grid1:hover img, .grid2:hover img {
-    filter: brightness(0) invert(1); /* Inverts the image colors */
+.grid1:hover img,
+.grid2:hover img {
+    filter: brightness(0) invert(1);
+    /* Inverts the image colors */
 }
 
 /* third section css */
@@ -134,6 +154,12 @@
     height: 360px;
     display: grid;
     grid-auto-flow: row;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.form:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0px 20px 50px 0px #00A9FF33; /* Adjust shadow for more emphasis */
 }
 
 .namesub {
@@ -152,7 +178,7 @@
     grid-auto-flow: column;
 }
 
-.name > input {
+.name>input {
     outline: none;
     border: none;
     border-radius: 10px;
@@ -183,15 +209,15 @@
     justify-self: center;
 }
 
-.message > input {
+.message>input {
     outline: none;
     border: 1px solid #DDDDDD;
     border-radius: 10px;
-    height:80px;
+    height: 80px;
     width: 624px;
 }
 
-.form > button {
+.form>button {
     background-color: #FFFFFF;
     color: #00A9FF;
     border: 1px solid var(--Primary, #00A9FF);
@@ -201,6 +227,7 @@
     align-content: center;
     justify-self: center;
 }
+
 
 /* fourth section */
 .fourthsection {
@@ -228,78 +255,102 @@
     grid-auto-flow: column;
     border-radius: 10px;
     border: 1px solid #CBECFD;
-    width:688px;
+    width: 688px;
     height: 72px;
     justify-content: space-around;
 }
 
-/* footer */
+@media (max-width: 480px) {
 
-.footer {
-    border-top: 1px solid var(--Primary, #00A9FF);
+/* second section */
+
+.Animation {
+    display: none;
+}
+
+.whoweare {
+    width: 312px;
+    height: 414px;
+    padding: 20px;
+}
+
+.route {
+    display: none;
+}
+
+.grids {
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
+    gap: 10px;
 }
 
-.footer img {
-    justify-self: center;
+.grid1 {
+    height: 464px;
+    width: 312px;
 }
 
-.footerline {
-    height: 108px;
-    background-color: #CBECFD;
-    width:1px;
+.grid2 {
+    height: 384px;
+    width: 312px;
 }
 
-.footer > p {
-    height: 108px;
-    width: 642px;
+.text2 {
+    width: 280px;
+    height: 352px;
 }
 
-.info {
-    width: 324px;
-    height: 108px;
+.text {
+    height: 432px;
+    width: 280px;
+    padding: 10px;
+} 
+
+.whoweare > h2 {
+    font-size: 24px;
+    line-height: 28.1px;
+}
+.text , .text2 > h3 {
+    font-size: 16px;
+    line-height: 18px;
 }
 
-.details {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
+/* third section */
+
+.thirdsection {
+    display: block;
+    grid-auto-flow: row;
+    padding: 20px;
+    width: 312px;
 }
 
-.details img {
-    padding: 10px 10px 0px 0px;
-}
-.details > p {
-    font-size: 12px;
+.namesub{
+    grid-auto-flow: row;;
+    row-gap: 15px;
 }
 
-.bottom {
-    background-color: #00A9FF;
-    height: 66px;
-    display: grid;
-    grid-auto-flow: column;
-    align-content: center;
+.name {
+    height: 38px;
+    width: 280px;
 }
 
-.copy {
-    margin-left: 20px;
+.form {
+    height: 392px;
+    width: 312px;
 }
 
-.terms {
-    display: grid;
-    grid-auto-flow: column;
-    
+.emailphone {
+    grid-auto-flow: row;
+    row-gap: 15px;
 }
 
-.terms > p {
-    margin: 14px;
+.message > input {
+    width: 280px;
+    height: 80px;
 }
 
-.bottom p {
-    color: #FFFFFF;
-}
+.form>button {
+    width: 280px;
+    height: 40px;
 
-.use {
-    justify-self: right;
+}
 }

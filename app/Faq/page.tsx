@@ -57,38 +57,42 @@ const FAQSection = () => {
     };
 
     return (
-        <div className='faq-container'>
-            <div className="faq">
-                {faqs.map((faq, index) => (
-                    <div key={index}>
-                        <div className={`question ${activeIndex === index ? 'active' : ''}`} onClick={() => toggleFAQ(index)}>
-                            <p>{faq.question}</p>
-                            <Image
-                                src={activeIndex === index ? '/chevron-up.svg' : '/chevron-down.svg'}
-                                alt="toggle icon"
-                                width={24}
-                                height={24}
-                            />
-                        </div>
-                        {activeIndex === index && (
-                            <div className="answer">
-                                {faq.paras.map((para, paraIndex) => (
-                                    <p key={paraIndex}>{para}</p>
-                                ))}
+        <div className='mainpage'>
+            <div className='faq-container'>
+                <div className="faq">
+                    {faqs.map((faq, index) => (
+                        <div key={index}>
+                            <div className={`question ${activeIndex === index ? 'active' : ''}`} onClick={() => toggleFAQ(index)}>
+                                <p>{faq.question}</p>
+                                <Image
+                                    src={activeIndex === index ? '/chevron-up.svg' : '/chevron-down.svg'}
+                                    alt="toggle icon"
+                                    width={24}
+                                    height={24}
+                                />
                             </div>
-                        )}
-                    </div>
-                ))}
+                            {activeIndex === index && (
+                                <div className="answer">
+                                    {faq.paras.map((para, paraIndex) => (
+                                        <p key={paraIndex}>{para}</p>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+
+                {/* Add your right section content here */}
+
+                <div className="rightsection">
+                    <p className="specialheading">FREQUENTLY ASKED QUESTIONS</p>
+                    <h2>Get the Answers You Need.</h2>
+                    <p>Have questions about life insurance? Explore our FAQs for clear, concise answers to help you make informed decisions about your coverage options.</p>
+                    <img src="/fourthsec.svg" alt="a man thinking" height={536} width={360} />
+                </div>
             </div>
 
-            {/* Add your right section content here */}
-
-            <div className="rightsection">
-                <p className="specialheading">FREQUENTLY ASKED QUESTIONS</p>
-                <h2>Get the Answers You Need.</h2>
-                <p>Have questions about life insurance? Explore our FAQs for clear, concise answers to help you make informed decisions about your coverage options.</p>
-                <img src="/fourthsec.svg" alt="a man thinking" height={536} width={360} />
-            </div>
+            <Image src={'/manthinking.svg'} alt='man thinking' height={464} width={312} />
         </div>
     );
 };

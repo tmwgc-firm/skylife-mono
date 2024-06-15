@@ -81,3 +81,61 @@
   border-bottom: 1px solid #00A9FF;  /* Add a bottom border */
   display: inline-block;  /* Ensure the borders fit the text length */
 }
+
+.mainpage > img {
+  display: none;
+}
+/* mobile media query */
+
+@media (max-width: 480px) {
+
+  .faq-container {
+    grid-template-columns: 1fr; /* Full width for mobile */
+    gap: 10px;
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .faq {
+    width: 100%; /* Full width for mobile */
+    max-height: none; /* Remove max-height for mobile */
+    overflow-y: visible; /* Allow content to expand */
+  }
+
+  .question {
+    grid-template-columns: 1fr; /* Stack question elements vertically */
+    height: auto; /* Adjust height to fit content */
+    padding: 10px; /* Increase padding for touch-friendly design */
+    margin-bottom: 10px;
+    width: 312px;
+  }
+
+  .answer {
+    grid-column: 1 / -1; 
+    padding: 10px;
+    margin-top: 10px;
+    width: 312px;
+  }
+
+  .rightsection {
+    grid-row: 1;
+    width: 312px;
+    text-align: center; /* Center-align text in right section */
+    margin-top: 20px; /* Increase top margin for separation */
+  }
+
+  .specialheading {
+    font-size: 16px; /* Increase font size for better visibility */
+    line-height: 1.2; /* Adjust line height */
+    padding: 10px 0; /* Adjust padding for better spacing */
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Add spacing at the bottom */
+  }
+
+  .rightsection > img {
+    display: none;
+  }
+
+  .mainpage > img {
+    display: block;
+  }
+}
