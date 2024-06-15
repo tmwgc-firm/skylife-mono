@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import './faq.css'
-import Image from 'next/image'; // Import Image component from Next.js
+import Image from 'next/image'; 
 
 const FAQSection = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null); // State to track active FAQ index

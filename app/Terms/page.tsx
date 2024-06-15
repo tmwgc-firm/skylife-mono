@@ -1,6 +1,6 @@
 import styles from "./terms.module.css";
 import Headerpage from "../Header/page";
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function page() {
     return (

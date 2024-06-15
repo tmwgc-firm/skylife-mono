@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Headerpage from "./Header/page";
 import Sections from "./Sections/page";
+import "./globals.css";
 
 
 export default function Home() {
