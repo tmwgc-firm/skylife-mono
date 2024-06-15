@@ -1,7 +1,6 @@
 /* footer */
 
 .footer {
-    margin-top: 20px;
     border-top: 1px solid var(--Primary, #00A9FF);
     display: grid;
     grid-auto-flow: column;
@@ -73,6 +72,11 @@
 
 .use {
     justify-self: right;
+}
+
+.inline {
+    color: #00A9FF;
+    font-weight: 600;
 }
 
 @media (max-width: 480px) {
