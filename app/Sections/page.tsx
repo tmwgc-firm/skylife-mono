@@ -1,8 +1,22 @@
 'use client'
 import Image from "next/image";
-import { useState, ChangeEvent, FormEvent } from "react";
+import { motion } from 'framer-motion';
+import { useEffect,useState, ChangeEvent, FormEvent } from "react";
 import styles from "./section.module.css";
 import FAQSection from "../Faq/page";
+
+const images = [                              /*for image transition on second section*/
+  { src: '/group45.svg', alt: 'Group 45' },
+  { src: '/group46.svg', alt: 'Group 46' },
+  { src: '/group47.svg', alt: 'Group 47' },
+];
+
+const transition = {
+  type: "spring",
+  mass: 1,
+  stiffness: 100,
+  damping: 15
+};
 
 interface FormData {
   name: string;
@@ -13,6 +27,15 @@ interface FormData {
 }
 
 export default function Sections() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   const [formData, setFormData] = useState<FormData>({
     name: '',
     subject: '',
@@ -55,9 +78,21 @@ export default function Sections() {
     <div>
       <div className={styles.secondsection}>
         <div className={styles.aboutus}>
-          <div className={styles.Animation}>
-            <Image src={'/1.svg'} alt="transition picture" height={443.55} width={446.14} />
-          </div>
+        <motion.div 
+            className={styles.Animation}
+            key={currentImage}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={transition}
+          >
+            <Image 
+              src={images[currentImage].src} 
+              alt={images[currentImage].alt} 
+              height={443.55} 
+              width={446.14} 
+            />
+          </motion.div>
           
           <div className={styles.mobileanimate}>
             <Image src={'animate1-mob.svg'} alt="animation" height={340} width={312} />
