@@ -342,7 +342,7 @@
     display: block;
     grid-auto-flow: row;
     padding: 20px;
-    width: 312px;
+    width: 100%;
 }
 
 .namesub{
