@@ -48,7 +48,7 @@
 }
 
 .heropara {
-    overflow-wrap: break-word;
+    overflow-wrap: break-word; /*breaks the paragraph accordingly*/
     max-width: 24rem;
 }
 
