@@ -52,6 +52,7 @@ p {
 
 a {
     text-decoration: none;
+    text-decoration-color: none;
 }
 
 @media (max-width: 480px) {
