@@ -7,7 +7,7 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.wholepage}>
       <div className={styles.hero}>
         < Headerpage />
         {/* first section of hero page */}
