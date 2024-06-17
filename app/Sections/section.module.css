@@ -176,7 +176,7 @@
 
 .form:hover {
   transform: scale(1.05); /* Slightly increase size */
-  box-shadow: 0px 20px 50px 0px #00A9FF33; /* Adjust shadow for more emphasis */
+  box-shadow: 0px 20px 50px 0px #00A9FF33; 
 }
 
 .namesub {
@@ -337,6 +337,7 @@
     grid-auto-flow: row;
     padding: 20px;
     max-width: fit-content;
+    background-color: #ECFAFF;
 }
 
 .getstarted {
@@ -356,6 +357,7 @@
 .form {
     height: 392px;
     width: 312px;
+    justify-self: center;
 }
 
 .emailphone {
