@@ -6,7 +6,7 @@ import Footerpage from "./Footer/page";
 const robotoSerif = Roboto_Serif({ weight: '700', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Sky finance",
+  title: "Sky financial",
   description: "Lander page of sky finance "
 };
 
