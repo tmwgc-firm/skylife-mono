@@ -1,5 +1,4 @@
 /* css to display the background image */
-
 .hero {
     background: url('/hero.svg');
     background-size: cover;
@@ -14,6 +13,7 @@
 .mobilehero {
     display: none;
 }
+
 
 
 /* First section css */
@@ -65,6 +65,10 @@
         display: block;
     }
 
+    /* .wholepage {
+        max-width: fit-content;
+    }
+     */
     .first_section > h1 {
         font-size: 32px;
         line-height: 37.47px;
@@ -72,6 +76,7 @@
 
     .hero {
         background: none;
+        width: fit-content;
         background-color: #E9F6FD;
         height: auto;
     }
