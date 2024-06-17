@@ -11,6 +11,12 @@ const images = [                              /*for image transition on second s
   { src: '/group47.svg', alt: 'Group 47' },
 ];
 
+const mobileImages = [
+  { src: '/mob-Group45.svg', alt: 'Mobile Group 45' },
+  { src: '/mob-Group46.svg', alt: 'Mobile Group 46' },
+  { src: '/mob-Group47.svg', alt: 'Mobile Group 47' },
+];
+
 const transition = {
   type: "spring",
   mass: 1,
@@ -28,10 +34,12 @@ interface FormData {
 
 export default function Sections() {
   const [currentImage, setCurrentImage] = useState(0);
+  const [currentMobileImage, setCurrentMobileImage] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+      setCurrentMobileImage((prevImage) => (prevImage + 1) % mobileImages.length);
     }, 3000); // Change image every 3 seconds
     return () => clearInterval(interval);
   }, []);
@@ -78,6 +86,7 @@ export default function Sections() {
     <div>
       <div className={styles.secondsection}>
         <div className={styles.aboutus}>
+          {/* desktop image animation */}
          <motion.div 
             className={styles.Animation}
             key={currentImage}
@@ -94,8 +103,22 @@ export default function Sections() {
             />
           </motion.div> 
           
-          <div className={styles.mobileanimate}>
-          </div>
+          {/* mobile animation */}
+          <motion.div 
+            className={styles.mobileanimate}
+            key={currentMobileImage}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={transition}
+          >
+            <Image 
+              src={mobileImages[currentMobileImage].src} 
+              alt={mobileImages[currentMobileImage].alt} 
+              height={340} 
+              width={312} 
+            />
+          </motion.div>
 
           <div className={styles.whoweare}>
 
