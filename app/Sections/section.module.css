@@ -175,8 +175,9 @@
 }
 
 .form:hover {
-  transform: scale(1.05); /* Slightly increase size */
-  box-shadow: 0px 20px 50px 0px #00A9FF33; 
+    transform: scale(1.05);
+    /* Slightly increase size */
+    box-shadow: 0px 20px 50px 0px #00A9FF33;
 }
 
 .namesub {
@@ -279,100 +280,115 @@
 
 @media (max-width: 480px) {
 
-/* second section */
+    /* second section */
 
-.Animation {
-    display: none;
-}
+    .Animation {
+        display: none;
+    }
 
-.whoweare {
-    width: 312px;
-    height: 414px;
-    padding: 20px;
-}
+    .mobileanimate {
 
-.route {
-    display: none;
-}
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
 
-.grids {
-    display: grid;
-    grid-auto-flow: row;
-    gap: 10px;
-}
+    .aboutus {
+        display: block;
+        grid-auto-flow: row;
+    }
 
-.grid1 {
-    height: 464px;
-    width: 312px;
-}
+    .whoweare {
+        width: 312px;
+        height: 414px;
+        padding: 20px;
+    }
 
-.grid2 {
-    height: 384px;
-    width: 312px;
-}
+    .route {
+        display: none;
+    }
 
-.text2 {
-    width: 280px;
-    height: 352px;
-}
+    .grids {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 10px;
+    }
 
-.text {
-    height: 432px;
-    width: 280px;
-    padding: 10px;
-} 
+    .grid1 {
+        height: 464px;
+        width: 312px;
+    }
 
-.whoweare > h2 {
-    font-size: 24px;
-    line-height: 28.1px;
-}
-.text , .text2 > h3 {
-    font-size: 16px;
-    line-height: 18px;
-}
+    .grid2 {
+        height: 384px;
+        width: 312px;
+    }
 
-/* third section */
+    .text2 {
+        width: 280px;
+        height: 352px;
+    }
 
-.thirdsection {
-    grid-auto-flow: row;
-    padding: 20px;
-    max-width: fit-content;
-    background-color: #ECFAFF;
-}
+    .text {
+        height: 432px;
+        width: 280px;
+        padding: 10px;
+    }
 
-.getstarted {
-    max-width:fit-content; 
-}
+    .whoweare>h2 {
+        font-size: 24px;
+        line-height: 28.1px;
+    }
 
-.namesub{
-    grid-auto-flow: row;;
-    row-gap: 15px;
-}
+    .text,
+    .text2>h3 {
+        font-size: 16px;
+        line-height: 18px;
+    }
 
-.name {
-    height: 38px;
-    width: 280px;
-}
+    /* third section */
 
-.form {
-    height: 392px;
-    width: 312px;
-    justify-self: center;
-}
+    .thirdsection {
+        grid-auto-flow: row;
+        padding: 20px;
+        max-width: fit-content;
+        background-color: #ECFAFF;
+    }
 
-.emailphone {
-    grid-auto-flow: row;
-    row-gap: 15px;
-}
+    .getstarted {
+        max-width: fit-content;
+    }
 
-.message > input {
-    width: 280px;
-    height: 80px;
-}
+    .namesub {
+        grid-auto-flow: row;
+        ;
+        row-gap: 15px;
+    }
 
-.form>button {
-    width: 280px;
-    height: 40px;
+    .name {
+        height: 38px;
+        width: 280px;
+    }
 
-}
+    .form {
+        height: 392px;
+        width: 312px;
+        justify-self: center;
+    }
+
+    .emailphone {
+        grid-auto-flow: row;
+        row-gap: 15px;
+    }
+
+    .message>input {
+        width: 280px;
+        height: 80px;
+    }
+
+    .form>button {
+        width: 280px;
+        height: 40px;
+
+    }
 }
