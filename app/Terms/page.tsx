@@ -8,7 +8,7 @@ export default function page() {
             <Headerpage />
             <div className={styles.terms}>
                 <div className={styles.minihead}>
-                    <p><Link href='/' className={styles.dot}>Home  </Link>&gt;  Privacy policy</p>
+                    <p><Link href='/' className={styles.dot}>Home  </Link>&gt;  Terms & conditions</p>
 
 
                     <h2>Terms of use<span className={styles.dot}>.</span></h2>
