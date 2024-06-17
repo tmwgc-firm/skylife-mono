@@ -81,7 +81,7 @@
 
 @media (max-width: 480px) {
 .mainfooter {
-    width: min-content;
+    width: auto;
 }
 .footer {
     grid-auto-flow: row;
