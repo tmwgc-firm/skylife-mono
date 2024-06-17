@@ -66,7 +66,7 @@ export default function Sections() {
     const result = await response.json();
 
     if (response.ok) {
-      alert(result.message); 
+      alert(result.message);
     } else {
       alert(`Failed to send email: ${result.message}`);
       console.error(result.error);
@@ -95,7 +95,6 @@ export default function Sections() {
           </motion.div> 
           
           <div className={styles.mobileanimate}>
-            <Image src={'animate1-mob.svg'} alt="animation" height={340} width={312} />
           </div>
 
           <div className={styles.whoweare}>
