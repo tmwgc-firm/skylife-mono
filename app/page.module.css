@@ -59,6 +59,40 @@
     line-height: 16.42px
 }
 
+/* Media query for tablets */
+    @media (max-width: 768px) {
+        .hero {
+            padding: 15px;
+            width:auto;
+            height: auto; /* Adjust the height to auto to fit content */
+        }
+    
+        
+        .specialheading {
+            font-size: 12px;
+            padding: 4px 0px;
+            line-height: 14px;
+        }
+        
+        .first_section > h1 {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        
+        .heropara {
+            width: 18rem;
+        }
+        
+        .getintouch {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        
+        .mobilehero {
+            display:none;
+        }
+    }
+
 /* Media queries for phone (480px and below) */
 @media (max-width: 480px) {
     .mobilehero {

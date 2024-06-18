@@ -276,7 +276,75 @@
     height: 72px;
     justify-content: space-around;
 }
+@media (max-width: 768px) {
+    .secondsection {
+        justify-items: center;
+    }
+    .aboutus {
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+    .whoweare {
+        display: grid;
+        height: auto;
+    }
+    
+    .roadmap {
+        width: fit-content;
+    }
 
+    .route {
+        display: none;
+    }
+
+    .grids {
+        display: grid;
+        grid-auto-flow: row;
+        position: relative;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .grid1 {
+        display: grid;
+        grid-auto-flow: row;
+        width: 700px;
+        height:auto;
+        border: 1px solid var(--Primary, #00A9FF);
+        border-radius: 10px;
+    }
+    
+    .grid2 {
+        display: grid;
+        grid-auto-flow: row;
+        width: 700px;
+        height:auto;
+        border: 1px solid var(--Primary, #00A9FF);
+        border-radius: 10px;
+    }
+
+    .text , .text2  {
+        width:600px;
+        
+        align-content: center;
+        justify-self: center;
+    }
+
+    .text2 > p {
+        font-size: 16px;
+    }
+
+    .text > p{
+        font-size: 16px;
+    }
+
+    .thirdsection {
+        display: grid;
+        grid-auto-flow: row;
+        width: fit-content;
+}
+}
 @media (max-width: 480px) {
 
     /* second section */

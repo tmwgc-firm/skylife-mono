@@ -79,6 +79,26 @@
     font-weight: 600;
 }
 
+/* tablet media query */
+@media (max-width: 768px) {
+    .footerline {
+        display: none;
+    }
+
+    .footer {
+        display: block;
+        text-align: -webkit-center;
+    }
+
+    .info {
+        display: grid;
+        grid-auto-flow: column;
+        width: fit-content;
+        gap: 10px;
+    }
+
+
+}
 @media (max-width: 480px) {
 .mainfooter {
     width: auto;

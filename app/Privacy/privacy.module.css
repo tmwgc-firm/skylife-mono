@@ -50,6 +50,16 @@
     padding: 15px;
 }
 
+/* media query for tablets */
+@media (max-width:768px){
+    .subgrid {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: space-around;
+        row-gap: 20px;
+    }
+}
+
 @media (max-width: 480px) {
 
     .subgrid {
