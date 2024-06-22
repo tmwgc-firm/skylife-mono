@@ -234,12 +234,16 @@
     justify-self: center;
 }
 
-.message>input {
-    outline: none;
+.messagebox{
     border: 1px solid #DDDDDD;
     border-radius: 10px;
     height: 80px;
     width: 624px;
+}
+
+.messagebox >input {
+    outline: none;
+    border: none;
 }
 
 .form>button {

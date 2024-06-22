@@ -297,14 +297,15 @@ export default function Sections() {
             </div>
 
             <div className={styles.message}>
-              <input
+              <div className={styles.messagebox}>
+                <input
                 placeholder="Message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
               />
               {errors.message && <span className={styles.error}>{errors.message}</span>}
-
+              </div>
             </div>
 
             <button type="submit">Get in touch</button>
