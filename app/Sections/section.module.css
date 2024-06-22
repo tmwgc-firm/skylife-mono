@@ -10,6 +10,7 @@
         grid-template-columns: 1fr 1fr; /* Split the space equally between the two columns */
         column-gap: 20px; /* Add some gap between the columns */
         align-items: center; /* Align items vertically in the center */
+        margin: 3%;
       }
       
       .whoweare {
