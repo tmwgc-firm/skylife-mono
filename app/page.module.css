@@ -7,7 +7,7 @@
     grid-auto-flow: row;
     position: relative;
     padding: 20px;
-    height: 952px;
+    height: 125vh;
 }
 
 .mobilehero {
@@ -86,6 +86,7 @@
         .getintouch {
             font-size: 12px;
             line-height: 14px;
+            cursor: pointer;
         }
         
         .mobilehero {
