@@ -4,85 +4,36 @@
     margin: 30px;
 }
 
-.privacy {
+.maingrid {
     display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; 
+}
 
+.subgrid {
+    padding: 15px;
+    border: 1px solid #CBECFD;
+    border-radius: 10px;
+}
+
+.oddGrid {
+    grid-column: 1; /* Odd-numbered grids in the first column */
+}
+
+.evenGrid {
+    grid-column: 2; /* Even-numbered grids in the second column */
 }
 
 .minihead {
-    display: grid;
-    /* grid-auto-flow: row; */
+    margin-bottom: 20px;
+}
+
+.linkpage1 {
     padding: 20px;
-    
 }
 
 .dot {
     color: #00A9FF;
 }
 
-.maingrid {
-    display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 20px;
-}
 
-.subgrid {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-around;
-}
-
-.leftgrid {
-    border: 1px solid #CBECFD;
-    border-radius: 10px;
-    max-width: 550px;
-    height: 130px;
-    padding: 15px;
-}
-
-.rightgrid {
-    border: 1px solid #CBECFD;
-    border-radius: 10px;
-    max-width: 550px;
-    height: 130px;
-    padding: 15px;
-}
-
-/* media query for tablets */
-@media (max-width:768px){
-    .subgrid {
-        display: grid;
-        grid-auto-flow: row;
-        justify-content: space-around;
-        row-gap: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .subgrid {
-        display: grid;
-        grid-auto-flow: row;
-        justify-content: space-around;
-        row-gap: 20px;
-    }
-    
-    .leftgrid {
-        padding: 5px;
-    }
-    
-    .rightgrid{
-        padding: 5px;
-    }
-    
-    .linkpage1{
-        margin: 5px;
-        display: block;
-    }
-    
-    .minihead {
-        padding: 5px;
-    }
-    }
