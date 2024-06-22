@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import { motion } from 'framer-motion';
-import { useEffect,useState, ChangeEvent, FormEvent } from "react";
+import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
 import styles from "./section.module.css";
 import FAQSection from "../Faq/page";
 
@@ -52,6 +52,8 @@ export default function Sections() {
     message: ''
   });
 
+  const [errors, setErrors] = useState<Partial<FormData>>({});
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -60,26 +62,50 @@ export default function Sections() {
     }));
   };
 
+  const validate = () => {
+    let formErrors: Partial<FormData> = {};
+    if (!formData.name) formErrors.name = 'Name is required';
+    if (!formData.subject) formErrors.subject = 'Subject is required';
+    if (!formData.email) formErrors.email = 'Email is required';
+    if (!formData.phone) formErrors.phone = 'Phone number is required';
+    if (!formData.message) formErrors.message = 'Message is required';
+    return formErrors;
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
+    const formErrors = validate();
+    if (Object.keys(formErrors).length === 0) {
 
-    const result = await response.json();
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    if (response.ok) {
-      alert(result.message);
+      const result = await response.json();
+
+      if (response.ok) {
+        alert(result.message);
+        setFormData({
+          name: '',
+          subject: '',
+          email: '',
+          phone: '',
+          message: ''
+        });
+      } else {
+        alert(`Failed to send email: ${result.message}`);
+        console.error(result.error);
+      }
     } else {
-      alert(`Failed to send email: ${result.message}`);
-      console.error(result.error);
+      setErrors(formErrors);
     }
   };
+
 
   return (
     // second section of lander page
@@ -87,7 +113,7 @@ export default function Sections() {
       <div className={styles.secondsection}>
         <div className={styles.aboutus}>
           {/* desktop image animation */}
-         <motion.div 
+          <motion.div
             className={styles.Animation}
             key={images[currentImage].src}
             initial={{ opacity: 0 }}
@@ -95,16 +121,16 @@ export default function Sections() {
             exit={{ opacity: 0 }}
             transition={transition}
           >
-            <Image 
-              src={images[currentImage].src} 
-              alt={images[currentImage].alt} 
-              height={443.55} 
-              width={446.14} 
+            <Image
+              src={images[currentImage].src}
+              alt={images[currentImage].alt}
+              height={443.55}
+              width={446.14}
             />
-          </motion.div> 
-          
+          </motion.div>
+
           {/* mobile animation */}
-          <motion.div 
+          <motion.div
             className={styles.mobileanimate}
             key={mobileImages[currentMobileImage].src}
             initial={{ opacity: 0 }}
@@ -112,11 +138,11 @@ export default function Sections() {
             exit={{ opacity: 0 }}
             transition={transition}
           >
-            <Image 
-              src={mobileImages[currentMobileImage].src} 
-              alt={mobileImages[currentMobileImage].alt} 
-              height={340} 
-              width={312} 
+            <Image
+              src={mobileImages[currentMobileImage].src}
+              alt={mobileImages[currentMobileImage].alt}
+              height={340}
+              width={312}
             />
           </motion.div>
 
@@ -224,6 +250,7 @@ export default function Sections() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange} />
+                {errors.name && <span className={styles.error}>{errors.name}</span>}
               </div>
 
               <div className={styles.name}>
@@ -235,6 +262,8 @@ export default function Sections() {
                   value={formData.subject}
                   onChange={handleChange}
                 />
+                {errors.subject && <span className={styles.error}>{errors.subject}</span>}
+
               </div>
             </div>
 
@@ -248,6 +277,8 @@ export default function Sections() {
                   value={formData.email}
                   onChange={handleChange}
                 />
+                {errors.email && <span className={styles.error}>{errors.email}</span>}
+
               </div>
 
               <div className={styles.name}>
@@ -259,6 +290,8 @@ export default function Sections() {
                   value={formData.phone}
                   onChange={handleChange}
                 />
+                {errors.phone && <span className={styles.error}>{errors.phone}</span>}
+
               </div>
 
             </div>
@@ -270,6 +303,8 @@ export default function Sections() {
                 value={formData.message}
                 onChange={handleChange}
               />
+              {errors.message && <span className={styles.error}>{errors.message}</span>}
+
             </div>
 
             <button type="submit">Get in touch</button>
