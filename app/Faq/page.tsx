@@ -88,7 +88,7 @@ const FAQSection = () => {
                     <p className="specialheading">FREQUENTLY ASKED QUESTIONS</p>
                     <h2>Get the Answers You Need<span className='dot'>.</span></h2>
                     <p>Have questions about life insurance? Explore our FAQs for clear, concise answers to help you make informed decisions about your coverage options.</p>
-                    <img src="/fourthsec.svg" alt="a man thinking" height={536} width={360} />
+                    <Image src="/fourthsec.svg" alt="a man thinking" height={536} width={360} />
                 </div>
             </div>
 
