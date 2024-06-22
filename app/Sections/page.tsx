@@ -4,25 +4,8 @@ import { motion } from 'framer-motion';
 import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
 import styles from "./section.module.css";
 import FAQSection from "../Faq/page";
+import Carousel from "../Carousel/page";
 
-const images = [                              /*for image transition on second section*/
-  { src: '/group45.svg', alt: 'Group 45' },
-  { src: '/group46.svg', alt: 'Group 46' },
-  { src: '/group47.svg', alt: 'Group 47' },
-];
-
-const mobileImages = [
-  { src: '/mob-Group45.svg', alt: 'Mobile Group 45' },
-  { src: '/mob-Group46.svg', alt: 'Mobile Group 46' },
-  { src: '/mob-Group47.svg', alt: 'Mobile Group 47' },
-];
-
-const transition = {
-  type: "spring",
-  mass: 1,
-  stiffness: 100,
-  damping: 15
-};
 
 interface FormData {
   name: string;
@@ -33,16 +16,6 @@ interface FormData {
 }
 
 export default function Sections() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [currentMobileImage, setCurrentMobileImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-      setCurrentMobileImage((prevImage) => (prevImage + 1) % mobileImages.length);
-    }, 3000); // Change image every 3 seconds
-    return () => clearInterval(interval);
-  }, []);
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -113,38 +86,7 @@ export default function Sections() {
       <div className={styles.secondsection}>
         <div className={styles.aboutus}>
           {/* desktop image animation */}
-          <motion.div
-            className={styles.Animation}
-            key={images[currentImage].src}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={transition}
-          >
-            <Image
-              src={images[currentImage].src}
-              alt={images[currentImage].alt}
-              height={443.55}
-              width={446.14}
-            />
-          </motion.div>
-
-          {/* mobile animation */}
-          <motion.div
-            className={styles.mobileanimate}
-            key={mobileImages[currentMobileImage].src}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={transition}
-          >
-            <Image
-              src={mobileImages[currentMobileImage].src}
-              alt={mobileImages[currentMobileImage].alt}
-              height={340}
-              width={312}
-            />
-          </motion.div>
+          <Carousel />
 
           <div className={styles.whoweare}>
 

@@ -1,57 +1,38 @@
 /* second section */
-.secondsection {
-    display: grid;
-    grid-auto-flow: row;
-    padding: 20px;
-}
-
-.mobileanimate {
-    display: none;
-}
-
-.Animation{
-    justify-self: center;
-}
-
-.whoweare {
-    display: grid;
-    width: 632px;
-    height: 360px;
-    align-self: flex-end;
-}
-
-.specialheading {
-    color: #00A9FF;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.42px;
-    padding: 5px 0px 5px 0px;
-    border-top: 1px solid #00A9FF;
-    border-bottom: 1px solid #00A9FF;
-    width: fit-content;
-}
-
-.specialheading1 {
-    color: #00A9FF;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.42px;
-    padding: 5px 0px 5px 0px;
-    border-top: 1px solid #00A9FF;
-    border-bottom: 1px solid #00A9FF;
-    width: fit-content;
-}
-
-.aboutus {
-    display: grid;
-    grid-auto-flow: column;
-}
-
-
-.dot {
-    color: #00A9FF;
-}
-
+    .secondsection {
+        display: grid;
+        grid-auto-flow: row;
+        padding: 20px;
+      }
+      
+      .aboutus {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Split the space equally between the two columns */
+        column-gap: 20px; /* Add some gap between the columns */
+        align-items: center; /* Align items vertically in the center */
+      }
+      
+      .whoweare {
+        display: grid;
+        max-width: 632px; /* Ensure the text section does not exceed the defined width */
+        height: auto; /* Adjust height automatically */
+      }
+      
+      .specialheading {
+        color: #00A9FF;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.42px;
+        padding: 5px 0px;
+        border-top: 1px solid #00A9FF;
+        border-bottom: 1px solid #00A9FF;
+        width: fit-content;
+      }
+      
+      .dot {
+        color: #00A9FF;
+      }
+      
 /* roadmap of second section */
 
 .roadmap {
@@ -180,7 +161,6 @@
 
 .form:hover {
     transform: scale(1.05);
-    /* Slightly increase size */
     box-shadow: 0px 20px 50px 0px #00A9FF33;
 }
 
@@ -244,6 +224,7 @@
 .messagebox >input {
     outline: none;
     border: none;
+    padding: 3px;
 }
 
 .form>button {
