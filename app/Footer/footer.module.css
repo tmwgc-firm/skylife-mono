@@ -59,7 +59,7 @@
 .terms {
     display: grid;
     grid-auto-flow: column;
-    
+    justify-items: end;
 }
 
 .terms > p {
