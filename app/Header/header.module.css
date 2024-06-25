@@ -1,14 +1,14 @@
 /* Header page css*/
 
-.header {
+/* .header {
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
     border-bottom: 1px solid #CBECFD;
     height: 70px;
-}
+} */
 
-.header>button {
+/* .header>button {
     background-color: #00A9FF;
     color: #FFFFFF;
     text-align: center;
@@ -18,26 +18,61 @@
     width: 134px;
     height: 40px;
     cursor: pointer;
+} */
+
+.top_header {
+  max-width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.sub_header {
+  display: grid;
+
+  width: 90%;
+}
+
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px 24px 0px;
+}
+
+.header_button button {
+  width: 134px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 24px, 12px, 24px;
+  gap: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #00a9ff;
+}
+.sub_header .header_line {
+  height: 2px;
+  background-color: #cbecfd;
 }
 
 @media (max-width: 768px) {
-    .header>button {
-        width: 100px;
-        height: 35px;
-    }
+  .header > button {
+    width: 100px;
+    height: 35px;
+  }
 }
 
 @media (max-width: 480px) {
+  .header {
+    max-width: 100%;
+    justify-content: normal;
+    margin-top: 10px;
+  }
 
-    .header {
-        max-width: 100%;
-        justify-content: normal;
-        margin-top: 10px;
-    }
-
-    .header>button {
-        width: 105px;
-        height: 30px;
-        font-size: 12px;
-    }
+  .header > button {
+    width: 105px;
+    height: 30px;
+    font-size: 12px;
+  }
 }

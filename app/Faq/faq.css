@@ -1,9 +1,14 @@
+.mainpage {
+  overflow: hidden;
+}
+
 .faq-container {
   display: grid;
   /* grid-template-columns: 1fr minmax(auto, 464px); */
+
   gap: 20px;
   grid-auto-flow: column;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px 20px 0px 30px;
 }
 
@@ -23,14 +28,14 @@
   align-items: center;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #CBECFD;
+  border: 1px solid #cbecfd;
   cursor: pointer;
   transition: background-color 0.3s ease;
   height: 66px;
 }
 
 .question:hover {
-  background-color: #CBECFD;
+  background-color: #cbecfd;
 }
 
 .question p {
@@ -38,13 +43,14 @@
   font-weight: 20px;
   line-height: 24px;
   font-weight: 400;
+  font-family: var(--font-work);
 }
 
 .answer {
   grid-column: 1 / -1; /* Span the answer across the full width of the question */
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #CBECFD;
+  border: 1px solid #cbecfd;
   display: grid;
   gap: 10px;
   margin-top: 10px;
@@ -52,73 +58,81 @@
 
 .answer p {
   margin: 0;
+  font-family: var(--font-work);
 }
 
 .rightsection {
   display: grid;
   gap: 20px;
   text-align: center;
-  align-self: start; 
+  align-self: start;
   justify-items: center;
 }
 
-.rightSection h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.rightSection p {
+.rightsection p {
   font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
+
+  font-weight: 500;
+  max-width: 35rem;
+  display: grid;
+  text-align: center;
+  color: #777777;
+  font-family: var(--font-work);
+}
+.rightsection p:nth-child(1) {
+  color: #00a9ff;
 }
 
 .specialheading {
-  color: #00A9FF;
+  color: #00a9ff;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16.42px;
+  /* line-height: 16.42px; */
   padding: 5px 0px 5px 0px;
   max-width: fit-content;
-  border-top: 1px solid #00A9FF;  /* Add a top border */
-  border-bottom: 1px solid #00A9FF;  /* Add a bottom border */
+  font-family: var(--font-work);
+  border-top: 1px solid #00a9ff; /* Add a top border */
+  border-bottom: 1px solid #00a9ff; /* Add a bottom border */
   /* display: inline-block;  Ensure the borders fit the text length */
+}
+.rightsection h2 {
+  font-size: 40px;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  max-width: 30rem;
 }
 
 .dot {
-  color: #00A9FF;
+  color: #00a9ff;
 }
 .mainpage > img {
   display: none;
 }
 /* tablet media query */
-@media (max-width: 768px) {
-
+@media (min-width: 650px) and (max-width: 1024px) {
   .mainpage {
     display: grid;
   }
-.faq-container {
-  display: grid;
-  grid-auto-flow: row;
-}
+  .faq-container {
+    display: grid;
+    grid-auto-flow: row;
+  }
 
-.rightsection{
-  grid-row: 1;
-}
+  .rightsection {
+    grid-row: 1;
+  }
 
-.rightsection > img {
-  display: none;
-}
- .mainpage > img {
-  display: block;
-  place-self: center;
- }
+  .rightsection > img {
+    display: none;
+  }
+  .mainpage > img {
+    display: block;
+    place-self: center;
+  }
 }
 /* mobile media query */
 
 @media (max-width: 480px) {
-
   .faq-container {
     /* grid-template-columns: 1fr;  */
     display: grid;
@@ -134,15 +148,15 @@
   }
 
   .question {
-    grid-template-columns: 1fr auto; 
-    height: auto; 
-    padding: 10px; 
+    grid-template-columns: 1fr auto;
+    height: auto;
+    padding: 10px;
     margin-bottom: 10px;
     width: 312px;
   }
 
   .answer {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     padding: 10px;
     margin-top: 10px;
     width: 312px;
@@ -152,16 +166,16 @@
     grid-row: 1;
     width: 312px;
     gap: 0;
-    text-align: center; 
-    margin-top: 20px; 
+    text-align: center;
+    margin-top: 20px;
   }
 
   .specialheading {
-    font-size: 16px; 
-    line-height: 1.2; 
-    padding: 10px 0; 
-    text-align: center; 
-    margin-bottom: 20px; 
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .rightsection > img {

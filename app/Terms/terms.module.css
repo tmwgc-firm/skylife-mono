@@ -1,83 +1,99 @@
 .linkpage1 {
-    display: grid;
-    grid-auto-flow: row;
-    margin: 30px;
+  display: grid;
+  grid-auto-flow: row;
+  margin: 30px;
 }
 
 .terms {
-    display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 20px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 20px;
 }
 
 .minihead {
-    padding: 20px;
+  padding: 20px;
+}
+.minihead p {
+  font-family: var(--font-work);
+}
+.minihead h2 {
+  font-family: var(--font-roboto);
+}
+.flexContent {
+  display: grid;
+  row-gap: 10px;
+}
+.flexContent h4 {
+  display: grid;
+  font-family: var(--font-roboto);
+}
+.flexContent p {
+  display: grid;
+  font-family: var(--font-work);
 }
 
 .dot {
-    color: #00A9FF;
+  color: #00a9ff;
 }
 
 .maingrid {
-    display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 20px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 20px;
 }
 
 .subgrid {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-around;
-    gap: 20px;
-    border: 1px solid #CBECFD;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px; 
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  gap: 20px;
+  border: 1px solid #cbecfd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .leftgrid,
 .rightgrid {
-    border: 1px solid #CBECFD;
-    border-radius: 10px;
-    max-width: 550px;
-    height: auto; 
-    padding: 15px;
+  border: 1px solid #cbecfd;
+  border-radius: 10px;
+  max-width: 550px;
+  height: auto;
+  padding: 15px;
 }
 
 .evenGrid {
-    grid-column: 2 / span 1; /* Place even grids in the second column */
+  grid-column: 2 / span 1; /* Place even grids in the second column */
 }
 
 /* Media queries */
 @media (max-width: 768px) {
-    .subgrid {
-        display: grid;
-        grid-auto-flow: row;
-        justify-content: space-around;
-        row-gap: 20px;
-    }
+  .subgrid {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
 }
 @media (max-width: 480px) {
-    .subgrid {
-        display: grid;
-        grid-auto-flow: row; /* Ensure grid items flow in rows */
-        justify-content: space-around;
-        row-gap: 20px;
-    }
+  .subgrid {
+    display: grid;
+    grid-auto-flow: row; /* Ensure grid items flow in rows */
+    justify-content: space-around;
+    row-gap: 20px;
+  }
 
-    .leftgrid,
-    .rightgrid {
-        padding: 5px;
-    }
+  .leftgrid,
+  .rightgrid {
+    padding: 5px;
+  }
 
-    .linkpage1 {
-        margin: 5px;
-        display: block;
-    }
+  .linkpage1 {
+    margin: 5px;
+    display: block;
+  }
 
-    .minihead {
-        padding: 5px;
-    }
+  .minihead {
+    padding: 5px;
+  }
 }
-
-

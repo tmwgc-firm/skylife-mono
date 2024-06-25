@@ -1,39 +1,57 @@
 .linkpage1 {
-    display: grid;
-    grid-auto-flow: row;
-    margin: 30px;
+  display: grid;
+  grid-auto-flow: row;
+  margin: 30px;
 }
 
 .maingrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    gap: 20px; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 20px;
 }
 
 .subgrid {
-    padding: 15px;
-    border: 1px solid #CBECFD;
-    border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #cbecfd;
+  border-radius: 10px;
 }
 
 .oddGrid {
-    grid-column: 1; /* Odd-numbered grids in the first column */
+  grid-column: 1; /* Odd-numbered grids in the first column */
 }
 
 .evenGrid {
-    grid-column: 2; /* Even-numbered grids in the second column */
+  grid-column: 2; /* Even-numbered grids in the second column */
 }
 
 .minihead {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  row-gap: 20px;
+  padding: 20px 0;
+  font-family: var(--font-work);
 }
-
+.minihead p {
+  font-family: var(--font-work);
+}
+.minihead h2 {
+  font-family: var(--font-roboto);
+}
+.gridContent {
+  display: grid;
+  row-gap: 10px;
+}
+.gridContent h4 {
+  font-family: var(--font-roboto);
+}
+.gridContent p {
+  font-family: var(--font-work);
+  color: #777777;
+}
 .linkpage1 {
-    padding: 20px;
+  padding: 20px;
 }
 
 .dot {
-    color: #00A9FF;
+  color: #00a9ff;
 }
-
-

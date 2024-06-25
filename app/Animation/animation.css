@@ -1,0 +1,91 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.image-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 446px;
+  height: 371px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.card,
+.card-two,
+.card-three {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.card {
+  transform-origin: bottom right;
+  z-index: 1;
+  animation-name: rotateCard;
+}
+
+.card-two {
+  transform-origin: bottom left;
+  animation-name: cardtwo;
+}
+
+.card-three {
+  transform-origin: bottom right;
+  z-index: -1;
+  animation-name: cardthree;
+}
+
+@keyframes rotateCard {
+  from {
+    transform: rotate(15deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes cardtwo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes cardthree {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+}

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Roboto_Serif } from 'next/font/google';
+import { Roboto_Serif, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Footerpage from "./Footer/page";
 
-const robotoSerif = Roboto_Serif({ weight: '700', subsets: ['latin'] });
+const inter = Roboto_Serif({ subsets: ["latin"], variable: "--font-roboto" });
+const work = Work_Sans({ subsets: ["latin"], variable: "--font-work" });
 
 export const metadata: Metadata = {
   title: "Sky financial",
-  description: "Lander page of sky finance "
+  description: "Lander page of sky finance ",
 };
 
 export default function RootLayout({
@@ -17,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${robotoSerif.className}`}>
+      <body className={`${inter.variable} ${work.variable}`}>
         {children}
-        < Footerpage />
-        </body>
+        <Footerpage />
+      </body>
     </html>
   );
 }

@@ -1,8 +1,8 @@
-import React from 'react';
-import termsData from './terms.json'; 
+import React from "react";
+import termsData from "./terms.json";
 import styles from "./terms.module.css";
 import Headerpage from "../Header/page";
-import Link from 'next/link';
+import Link from "next/link";
 
 // Define a type for the terms data
 interface Term {
@@ -15,8 +15,15 @@ const Page: React.FC = () => {
       <Headerpage />
       <div className={styles.terms}>
         <div className={styles.minihead}>
-          <p><Link href='/' className={styles.dot}>Home  </Link>&gt;  Terms & conditions</p>
-          <h2>Terms of use<span className={styles.dot}>.</span></h2>
+          <p>
+            <Link href="/" className={styles.dot}>
+              Home{" "}
+            </Link>
+            &gt; Terms & conditions
+          </p>
+          <h2>
+            Terms of use<span className={styles.dot}>.</span>
+          </h2>
         </div>
 
         <div className={styles.maingrid}>
@@ -26,8 +33,11 @@ const Page: React.FC = () => {
             const isEven = index % 2 === 1; // Check if index is odd (adjusting for 0-based index)
 
             return (
-              <div key={index} className={`${styles.subgrid} ${isEven ? styles.evenGrid : ''}`}>
-                <div>
+              <div
+                key={index}
+                className={`${styles.subgrid} ${isEven ? styles.evenGrid : ""}`}
+              >
+                <div className="flexContent">
                   <h4>{key}</h4>
                   <p>{value}</p>
                 </div>
@@ -38,6 +48,6 @@ const Page: React.FC = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Page;
