@@ -207,72 +207,96 @@
   }
 }
 
-/* @media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 650px) {
+  .overall {
+    width: 100%;
+    display: grid;
+  }
+  .wholepage {
+    max-width: 100%;
+  }
   .hero {
-    padding: 15px;
-    width: auto;
-    height: auto;
+    /* height: 346px; */
+    height: 100vh;
+    /* width: 100%; */
+    max-width: 100%;
+    background-image: url("/fetchpik.svg");
+    background-size: cover;
+    background-position-x: right;
+    /* position: relative; */
+    /* overflow: hidden; */
   }
-
-  .specialheading {
-    font-size: 12px;
-    padding: 4px 0px;
-    line-height: 14px;
+  .left_line p {
+    font-size: 25px;
+    /* line-height: 13px; */
+    padding: 5px 0;
+    letter-spacing: 1px;
   }
-
-  .first_section > h1 {
-    font-size: 48px;
-    line-height: 56px;
+  .left_line {
+    border-bottom: 1px solid #00a9ff;
+    border-top: 1px solid #00a9ff;
+    width: 100%;
   }
-
-  .heropara {
-    width: 18rem;
-  }
-
-  .getintouch {
-    font-size: 12px;
-    line-height: 14px;
-    cursor: pointer;
-  }
-
-  .mobilehero {
+  .desktop_color {
     display: none;
   }
-}
+  .left_grid {
+    max-width: 100%;
+    display: grid;
+    row-gap: 25px;
 
-
-@media (max-width: 480px) {
-  .mobilehero {
-    display: block;
+    padding: 40px 40px;
+  }
+  .dot {
+    color: #00a9ff;
+  }
+  .left_container_roboto {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 44.94px;
+    max-width: 30rem;
+    font-family: "san";
   }
 
-
-  .first_section > h1 {
-    font-size: 32px;
-    line-height: 37.47px;
+  .left_container_roboto h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 50.47px;
+    max-width: 25rem;
+    font-family: var(--font-roboto);
   }
-
-  .hero {
-    background: none;
-    width: fit-content;
+  .left_grid_get {
+    display: grid;
+    grid-template-columns: 0.9fr 13fr;
+    align-items: center;
+    font-size: 14px;
+  }
+  .left_grid_para {
+    max-width: 30rem;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    font-family: auto;
+    display: grid;
+    row-gap: 5px;
+    font-family: var(--font-work);
+  }
+  .left_grid_get img {
+    width: 55px;
+    height: 40px;
+    border: 2px;
+  }
+  .left_grid_get p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #00a9ff;
+    width: 6rem;
+  }
+  .tab_color {
     background-color: #e9f6fd;
-    height: auto;
-  }
-
-  .first_section {
     display: block;
-    width: 312px;
-    height: 400px;
+    width: 100%;
   }
-
-  .specialheading {
-    font-size: 12px;
-    line-height: 14px;
-    padding: 3px 0;
-  }
-
-  .getintouch {
-    font-size: 12px;
-    line-height: 14px;
-  }
-} */
+}

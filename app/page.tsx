@@ -19,36 +19,38 @@ export default function Home() {
               width={360}
             />
           </div>
-          <div className={styles.left_grid}>
-            <div className={styles.left_content_banner}>
-              <div className={styles.left_line}>
-                <p>WELCOME TO SKY FINANCIAL</p>
+          <div className={styles.desktop_color}>
+            <div className={styles.left_grid}>
+              <div className={styles.left_content_banner}>
+                <div className={styles.left_line}>
+                  <p>WELCOME TO SKY FINANCIAL</p>
+                </div>
               </div>
-            </div>
-            <div className={styles.left_container_roboto}>
-              <h1>
-                Lifes a Journey, Fly Confidently with our Protection
-                <span className={styles.dot}>.</span>
-              </h1>
-            </div>
+              <div className={styles.left_container_roboto}>
+                <h1>
+                  Lifes a Journey, Fly Confidently with our Protection
+                  <span className={styles.dot}>.</span>
+                </h1>
+              </div>
 
-            <div className={styles.left_grid_para}>
-              <p>
-                At Sky Financial, we specialize in providing comprehensive life
-                insurance and annuity options tailored to meet the unique needs
-                of individuals across all age groups and income levels. As a
-                licensed provider in all 50 states, we are dedicated to helping
-                clients nationwide secure their financial futures with
-                innovative insurance solutions.
-              </p>
-              <p>
-                Explore our website to learn more about our products and how we
-                can help you achieve peace of mind and financial security.
-              </p>
-            </div>
-            <div className={styles.left_grid_get}>
-              <p>Get in touch</p>
-              <Image src={"/arrow.svg"} width={30} height={30} alt="arrow" />
+              <div className={styles.left_grid_para}>
+                <p>
+                  At Sky Financial, we specialize in providing comprehensive
+                  life insurance and annuity options tailored to meet the unique
+                  needs of individuals across all age groups and income levels.
+                  As a licensed provider in all 50 states, we are dedicated to
+                  helping clients nationwide secure their financial futures with
+                  innovative insurance solutions.
+                </p>
+                <p>
+                  Explore our website to learn more about our products and how
+                  we can help you achieve peace of mind and financial security.
+                </p>
+              </div>
+              <div className={styles.left_grid_get}>
+                <p>Get in touch</p>
+                <Image src={"/arrow.svg"} width={30} height={30} alt="arrow" />
+              </div>
             </div>
           </div>
         </div>

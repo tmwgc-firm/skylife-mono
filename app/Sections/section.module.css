@@ -303,10 +303,10 @@
   line-height: 16.42px;
 }
 
-.grid1:hover,
+/* .grid1:hover,
 .grid2:hover {
   background-color: #00a9ff;
-  /* color: #FFFFFF; */
+  
 }
 
 .grid1:hover p,
@@ -314,14 +314,14 @@
 .grid2:hover p,
 .grid2:hover h3 {
   color: #ffffff;
-  /* Change text color on hover */
+ 
 }
 
 .grid1:hover img,
 .grid2:hover img {
   filter: brightness(0) invert(1);
-  /* Inverts the image colors */
-}
+ 
+} */
 
 /* third section css */
 .thirdsection {
@@ -503,7 +503,7 @@
   .page_too_find {
     display: grid;
     grid-auto-flow: row;
-    /* padding: 50px 100px; */
+
     text-align: center;
   }
   .whoweare {
@@ -544,11 +544,13 @@
   }
   .page_three {
     display: grid;
+    padding: 50px 0;
   }
 
   .page_three .flex {
     display: grid;
     grid-auto-flow: row;
+    /* padding: 50px 0; */
     row-gap: 0;
     justify-items: center;
   }
@@ -566,7 +568,7 @@
     display: none;
   }
 
-  .grids {
+  /* .grids {
     display: grid;
     grid-auto-flow: row;
 
@@ -590,7 +592,7 @@
     height: auto;
     border: 1px solid var(--Primary, #00a9ff);
     border-radius: 10px;
-  }
+  } */
 
   .text,
   .text2 {
@@ -618,10 +620,88 @@
     width: fit-content;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 650px) {
+  .page_top {
+    display: grid;
+    padding: 0;
+  }
+  .page_too_find {
+    display: grid;
+    grid-auto-flow: row;
+    padding: 0 50px;
+
+    /* text-align: center; */
+  }
+  .animation {
+    display: grid;
+    justify-self: flex-start;
+    padding-left: 150px;
+  }
+  .whoweare {
+    display: grid;
+  }
+  .whoweare h2 {
+    display: grid;
+    font-size: 55px;
+  }
+  .border {
+    display: none;
+  }
+  .blueline {
+    height: 50px;
+    width: 1px;
+    background-color: #00a9ff;
+    position: relative;
+  }
+  .bluelinetwo {
+    display: block;
+    height: 50px;
+    width: 1px;
+    background-color: #00a9ff;
+    position: relative;
+  }
+  .flextwoline {
+    display: grid;
+    justify-items: center;
+  }
+
+  .flextwoline {
+    display: grid;
+    justify-items: center;
+  }
+  .flex_one img {
+    width: 40px;
+    height: 40px;
+  }
+  .flex_two img {
+    width: 40px;
+    height: 40px;
+  }
+  .page_three {
+    display: grid;
+    padding: 50px 0;
+  }
+
+  .page_three .flex {
+    display: grid;
+    grid-auto-flow: row;
+    /* padding: 50px 0; */
+    row-gap: 0;
+    justify-items: center;
+  }
+  .mainpage {
+    display: grid;
+    justify-content: center;
+  }
+  .thirdsection {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 30px;
+  }
+
   /* second section */
 
-  .Animation {
+  /* .Animation {
     display: none;
   }
 
@@ -644,9 +724,9 @@
 
   .route {
     display: none;
-  }
+  } */
 
-  .grids {
+  /* .grids {
     display: grid;
     grid-auto-flow: row;
     gap: 10px;
@@ -670,9 +750,9 @@
     border-radius: 10px;
     align-self: center;
     margin-top: auto;
-  }
+  } */
 
-  .text {
+  /* .text {
     height: 432px;
     width: 280px;
     align-content: center;
@@ -694,11 +774,11 @@
   .text2 > h3 {
     font-size: 16px;
     line-height: 18px;
-  }
+  } */
 
   /* third section */
 
-  .thirdsection {
+  /* .thirdsection {
     grid-auto-flow: row;
     padding: 20px;
     max-width: fit-content;
@@ -738,5 +818,5 @@
   .form > button {
     width: 280px;
     height: 40px;
-  }
+  } */
 }
