@@ -28,7 +28,12 @@ const Animation = () => {
           currentImage === 0 ? "big" : "small"
         }`}
       >
-        <Image src={images[currentImage].src} alt={images[currentImage].alt} />
+        <Image
+          src={images[currentImage].src}
+          alt={images[currentImage].alt}
+          width={446}
+          height={371}
+        />
       </div>
 
       <div
@@ -39,6 +44,8 @@ const Animation = () => {
         <Image
           src={images[(currentImage + 1) % images.length].src}
           alt={images[(currentImage + 1) % images.length].alt}
+          width={446}
+          height={371}
         />
       </div>
 
@@ -50,6 +57,8 @@ const Animation = () => {
         <Image
           src={images[(currentImage + 2) % images.length].src}
           alt={images[(currentImage + 2) % images.length].alt}
+          width={446}
+          height={371}
         />
       </div>
     </div>
