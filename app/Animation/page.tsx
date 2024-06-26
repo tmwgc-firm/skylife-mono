@@ -28,12 +28,7 @@ const Animation = () => {
           currentImage === 0 ? "big" : "small"
         }`}
       >
-        <Image
-          src={images[currentImage].src}
-          alt={images[currentImage].alt}
-          width={500}
-          height={300}
-        />
+        <Image src={images[currentImage].src} alt={images[currentImage].alt} />
       </div>
 
       <div
