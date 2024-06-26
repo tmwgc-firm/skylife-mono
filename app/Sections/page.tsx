@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
 import styles from "./section.module.css";
 import FAQSection from "../Faq/page";
-import Carousel from "../Carousel/page";
+// import Carousel from "../Carousel/page";
 import Animation from "../Animation/page";
 
 interface FormData {
@@ -114,120 +114,6 @@ export default function Sections() {
           </div>
         </div>
 
-        {/* <div className={styles.roadmap}>
-          <div className={styles.route}>
-            <span className={styles.middleline}></span>
-          </div>
-
-          <div className={styles.grids}>
-            <div className={styles.grid1}>
-              <div className={styles.text}>
-                <Image
-                  src={"/grid1.svg"}
-                  alt="annunities image"
-                  width={64}
-                  height={64}
-                />
-
-                <p className={styles.subhead}>ANNUTIES</p>
-
-                <h3>Secure Your Retirement</h3>
-
-                <p>
-                  Planning for retirement is a crucial step in achieving
-                  long-term financial security. Annuities offer a reliable way
-                  to generate guaranteed income for life, ensuring that you can
-                  enjoy your retirement years with confidence.
-                </p>
-
-                <p>
-                  At Sky Financial, we specialize in annuity products tailored
-                  to the needs of high net worth individuals. Our exclusive
-                  offerings provide competitive returns and tax advantages,
-                  allowing you to maximize your retirement savings and enjoy a
-                  worry-free future.
-                </p>
-
-                <p>
-                  Whether you&apos;re looking for immediate income or a deferred
-                  annuity to supplement your retirement savings, our team of
-                  experts will help you navigate the options and find the right
-                  solution for your needs.
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.grid2}>
-              <div className={styles.text2}>
-                <Image
-                  src={"/grid2.svg"}
-                  alt="insurance picture"
-                  width={64}
-                  height={64}
-                />
-
-                <p>LIFE INSURANCE</p>
-
-                <h3>Protecting What Matters Most</h3>
-
-                <p>
-                  Comprehensive Coverage for Peace of Mind: Our life insurance
-                  plans offer robust protection, ensuring you and your family
-                  can face life&apos;s uncertainties with confidence.
-                </p>
-
-                <p>
-                  Whether you&apos;re a young family just starting out or a
-                  retiree looking to leave a legacy, our experienced agents will
-                  work closely with you to understand your needs and goals, and
-                  recommend a policy that fits your budget and lifestyle.
-                </p>
-
-                <p>
-                  With Sky Financial, you can rest assured that your loved ones
-                  will be taken care of no matter what the future holds.
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.grid1}>
-              <div className={styles.text}>
-                <Image
-                  src={"/grid3.svg"}
-                  alt="tax benefit image"
-                  height={64}
-                  width={64}
-                />
-
-                <p>TAX BENEFITS PROGRAM</p>
-
-                <h3>Maximize Your Savings</h3>
-
-                <p>
-                  Life insurance and annuities offer significant tax benefits
-                  that can help you maximize your savings and minimize your tax
-                  liability. With life insurance, the death benefit is typically
-                  paid out to your beneficiaries tax-free, providing them with
-                  financial security without the burden of taxes.
-                </p>
-
-                <p>
-                  Similarly, annuities offer tax-deferred growth, meaning you
-                  won&apos;t pay taxes on your earnings until you start
-                  receiving income. This allows your retirement savings to grow
-                  faster and gives you more control over when you pay taxes.
-                </p>
-
-                <p>
-                  At Sky Financial, we can help you take advantage of these tax
-                  benefit programs and create a comprehensive financial strategy
-                  that minimizes your tax liability while maximizing your
-                  savings potential.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div className={styles.page_three}>
           <div className={styles.border}></div>
 
@@ -254,10 +140,10 @@ export default function Sections() {
                 maximize your retirement savings and enjoy a worry-free future.
               </p>
               <p>
-                Whether you're looking for immediate income or a deferred
-                annuity to supplement your retirement savings, our team of
-                experts will help you navigate the options and find the right
-                solution for your needs.
+                Whether youre looking for immediate income or a deferred annuity
+                to supplement your retirement savings, our team of experts will
+                help you navigate the options and find the right solution for
+                your needs.
               </p>
             </div>
             <div className={styles.flextwoline}>
@@ -272,12 +158,12 @@ export default function Sections() {
                 <p>LIFE INSURANCE</p>
                 <p>Protecting What Matters Most</p>
                 <p>
-                  Comprehensive Coverage for Peace of Mind: Our life insurance
+                  Comprehensive Coverage for Peace of Mind Our life insurance
                   plans offer robust protection, ensuring you and your family
-                  can face life's uncertainties with confidence.
+                  can face lifes uncertainties with confidence.
                 </p>
                 <p>
-                  Whether you're a young family just starting out or a retiree
+                  Whether youre a young family just starting out or a retiree
                   looking to leave a legacy, our experienced agents will work
                   closely with you to understand your needs and goals, and
                   recommend a policy that fits your budget and lifestyle.
@@ -306,10 +192,10 @@ export default function Sections() {
                 financial security without the burden of taxes.
               </p>
               <p>
-                Similarly, annuities offer tax-deferred growth, meaning you
-                won't pay taxes on your earnings until you start receiving
-                income. This allows your retirement savings to grow faster and
-                gives you more control over when you pay taxes.
+                Similarly, annuities offer tax-deferred growth, meaning you wont
+                pay taxes on your earnings until you start receiving income.
+                This allows your retirement savings to grow faster and gives you
+                more control over when you pay taxes.
               </p>
               <p>
                 At Sky Financial, we can help you take advantage of these tax

@@ -1,5 +1,6 @@
 "use client";
 import "./animation.css";
+import Image from "next/image";
 
 import { useState, useEffect } from "react";
 
@@ -16,8 +17,9 @@ const Animation = () => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
     }, 2928);
+
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="container">
@@ -26,7 +28,12 @@ const Animation = () => {
           currentImage === 0 ? "big" : "small"
         }`}
       >
-        <img src={images[currentImage].src} alt={images[currentImage].alt} />
+        <Image
+          src={images[currentImage].src}
+          alt={images[currentImage].alt}
+          width={500}
+          height={300}
+        />
       </div>
 
       <div
@@ -34,7 +41,7 @@ const Animation = () => {
           currentImage === 1 ? "big" : "small"
         }`}
       >
-        <img
+        <Image
           src={images[(currentImage + 1) % images.length].src}
           alt={images[(currentImage + 1) % images.length].alt}
         />
@@ -45,7 +52,7 @@ const Animation = () => {
           currentImage === 2 ? "big" : "small"
         }`}
       >
-        <img
+        <Image
           src={images[(currentImage + 2) % images.length].src}
           alt={images[(currentImage + 2) % images.length].alt}
         />

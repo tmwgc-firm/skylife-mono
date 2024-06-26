@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div className={styles.left_container_roboto}>
               <h1>
-                Life's a Journey, Fly Confidently with our Protection
+                Lifes a Journey, Fly Confidently with our Protection
                 <span className={styles.dot}>.</span>
               </h1>
             </div>
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className={styles.left_container_roboto}>
               <h1>
-                Life's a Journey, Fly Confidently with our Protection
+                Lifes a Journey, Fly Confidently with our Protection
                 <span className={styles.dot}>.</span>
               </h1>
             </div>
