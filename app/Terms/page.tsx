@@ -37,9 +37,16 @@ const Page: React.FC = () => {
                 key={index}
                 className={`${styles.subgrid} ${isEven ? styles.evenGrid : ""}`}
               >
-                <div className="flexContent">
-                  <h4>{key}</h4>
-                  <p>{value}</p>
+                <div
+                  className="flexContent"
+                  style={{ display: "grid", rowGap: "10px" }}
+                >
+                  <h4 style={{ fontFamily: "var(--font-roboto)" }}>{key}</h4>
+                  <p
+                    style={{ fontFamily: "var(--font-work)", color: "#777777" }}
+                  >
+                    {value}
+                  </p>
                 </div>
               </div>
             );

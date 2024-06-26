@@ -6,7 +6,7 @@
 
 .maingrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-auto-flow: column;
   gap: 20px;
 }
 
@@ -54,4 +54,18 @@
 
 .dot {
   color: #00a9ff;
+}
+@media (min-width: 320px) and (max-width: 650px) {
+  .maingrid {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .subgrid {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .gridContent {
+    display: grid;
+    grid-auto-flow: row;
+  }
 }

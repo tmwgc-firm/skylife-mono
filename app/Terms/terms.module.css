@@ -12,6 +12,8 @@
 
 .minihead {
   padding: 20px;
+  display: grid;
+  row-gap: 20px;
 }
 .minihead p {
   font-family: var(--font-work);
@@ -45,9 +47,10 @@
 .subgrid {
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 20px;
   border: 1px solid #cbecfd;
+
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
