@@ -69,11 +69,11 @@
   color: #00a9ff;
   font-family: var(--font-work);
 }
-.left_grid_get img {
+/* .left_grid_get img {
   width: 55px;
   height: 40px;
   border: 2px;
-}
+} */
 .mobilehero {
   display: none;
 }

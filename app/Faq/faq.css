@@ -16,10 +16,15 @@
   display: grid;
   grid-template-rows: auto;
   gap: 10px;
-  max-height: 528px;
-  overflow-y: auto;
+  /* max-height: 528px; */
+  overflow: hidden;
   width: 688px;
   align-self: center;
+}
+.faq_border {
+  /* padding: 10px; */
+  border-radius: 10px;
+  border: 1px solid #cbecfd;
 }
 
 .question {
@@ -27,8 +32,8 @@
   grid-template-columns: 1fr auto; /* Split the question and icon */
   align-items: center;
   padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #cbecfd;
+  /* border-radius: 10px;
+  border: 1px solid #cbecfd; */
   cursor: pointer;
   transition: background-color 0.3s ease;
   height: 66px;
@@ -49,8 +54,9 @@
 .answer {
   grid-column: 1 / -1; /* Span the answer across the full width of the question */
   padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #cbecfd;
+  /* border-radius: 10px;
+  border: 1px solid #cbecfd; */
+  color: #777777;
   display: grid;
   gap: 10px;
   margin-top: 10px;
