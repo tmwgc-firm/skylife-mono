@@ -6,6 +6,9 @@
   height: 100vh;
   width: 100%;
 }
+.container-one {
+  display: none;
+}
 
 .image-container {
   position: absolute;
@@ -84,6 +87,20 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 650px) {
+  .container {
+    display: none;
+  }
+  .container-one {
+    /* display: block; */
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     width: 100%;

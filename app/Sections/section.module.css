@@ -409,12 +409,12 @@
   padding: 5px;
 }
 
-.formline {
+/* .formline {
   height: 20px;
   background-color: #aaaaaa;
   width: 1px;
   align-self: center;
-}
+} */
 
 .emailphone {
   display: grid;
@@ -853,11 +853,9 @@
     padding: 0 40px;
   }
   .name {
-    width: 100%;
+    width: 610px;
   }
-  .nameone {
-    width: 100%;
-  }
+
   .form {
     padding: 40px 0;
     height: 450px;
