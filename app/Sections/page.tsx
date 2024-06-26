@@ -102,10 +102,9 @@ export default function Sections() {
             <p>
               Our dedicated team of agents is committed to providing
               personalized service and innovative solutions tailored to meet the
-              unique needs of each client. We understand that every
-              individual&apos;s financial situation is different, and we take
-              the time to listen and recommend the best options for your needs
-              and goals.
+              unique needs of each client. We understand that every individuals
+              financial situation is different, and we take the time to listen
+              and recommend the best options for your needs and goals.
             </p>
             <p>
               At Sky Financial, we are passionate about helping our clients
