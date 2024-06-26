@@ -166,4 +166,12 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+#submodules
+
+[submodule "skylife-mono"]
+    path = skylife-mono
+    url = https://github.com/tmwgc-firm/skylife-mono.git
+
 >>>>>>> new-origin/master
+
