@@ -88,10 +88,7 @@ export default function Sections() {
           <div className={styles.whoweare}>
             <div className={styles.left_line}>WHO WE ARE?</div>
 
-            <h2>
-              Your Trusted Insurance Partner
-              <span className={styles.dot}>.</span>
-            </h2>
+            <h2>Your Trusted Insurance Partner.</h2>
 
             <p>
               Sky Financial is a leading provider of life insurance and annuity
@@ -152,8 +149,8 @@ export default function Sections() {
                 <Image
                   src={"/grid2.svg"}
                   alt="annunities image"
-                  width={64}
-                  height={64}
+                  width={94}
+                  height={94}
                 />
                 <p>LIFE INSURANCE</p>
                 <p>Protecting What Matters Most</p>

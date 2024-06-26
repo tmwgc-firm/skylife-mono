@@ -63,10 +63,10 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 650px) {
   .header {
     max-width: 100%;
-    justify-content: normal;
+    justify-content: space-between;
     margin-top: 10px;
   }
 

@@ -250,34 +250,37 @@
   .dot {
     color: #00a9ff;
   }
+
   .left_container_roboto {
     font-size: 15px;
     font-weight: 700;
     color: #333333;
     line-height: 44.94px;
-    max-width: 30rem;
+    max-width: 50rem;
     font-family: "san";
   }
 
   .left_container_roboto h1 {
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 50.47px;
-    max-width: 25rem;
+    font-size: 54px;
+    font-weight: 750;
+    line-height: 60.47px;
+    max-width: 35rem;
     font-family: var(--font-roboto);
   }
   .left_grid_get {
     display: grid;
-    grid-template-columns: 0.9fr 13fr;
+    /* grid-template-columns: 0.9fr 13fr; */
+    grid-auto-flow: column;
+    column-gap: 5px;
     align-items: center;
     font-size: 14px;
   }
   .left_grid_para {
-    max-width: 30rem;
+    max-width: 50rem;
     color: #777777;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 28px;
     font-family: auto;
     display: grid;
     row-gap: 5px;
@@ -289,10 +292,10 @@
     border: 2px;
   }
   .left_grid_get p {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 600;
     color: #00a9ff;
-    width: 6rem;
+    width: 10rem;
   }
   .tab_color {
     background-color: #e9f6fd;
