@@ -214,22 +214,29 @@
   }
   .wholepage {
     max-width: 100%;
+    /* width: -webkit-fill-available; */
   }
   .hero {
-    /* height: 346px; */
-    height: 100vh;
+    height: 310px;
+    /* height: 100vh; */
     /* width: 100%; */
-    max-width: 100%;
-    background-image: url("/fetchpik.svg");
-    background-size: cover;
-    background-position-x: right;
+    max-width: 45%;
+    background-image: url("/mobilefetchpik.svg");
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
     /* position: relative; */
     /* overflow: hidden; */
   }
+  .tab_color {
+    background-color: #e9f6fd;
+    display: block;
+    width: 45%;
+  }
   .left_line p {
-    font-size: 25px;
+    font-size: 12px;
     /* line-height: 13px; */
-    padding: 5px 0;
+    padding: 2px 0;
     letter-spacing: 1px;
   }
   .left_line {
@@ -243,9 +250,8 @@
   .left_grid {
     max-width: 100%;
     display: grid;
-    row-gap: 25px;
-
-    padding: 40px 40px;
+    row-gap: 15px;
+    padding: 10px 20px 40px 15px;
   }
   .dot {
     color: #00a9ff;
@@ -261,10 +267,10 @@
   }
 
   .left_container_roboto h1 {
-    font-size: 54px;
-    font-weight: 750;
-    line-height: 60.47px;
-    max-width: 35rem;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 34.47px;
+    max-width: 18rem;
     font-family: var(--font-roboto);
   }
   .left_grid_get {
@@ -278,28 +284,23 @@
   .left_grid_para {
     max-width: 50rem;
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 28px;
-    font-family: auto;
+    line-height: 16px;
+
     display: grid;
     row-gap: 5px;
     font-family: var(--font-work);
   }
   .left_grid_get img {
-    width: 55px;
-    height: 40px;
+    width: 20px;
+    height: 15px;
     border: 2px;
   }
   .left_grid_get p {
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 600;
     color: #00a9ff;
-    width: 10rem;
-  }
-  .tab_color {
-    background-color: #e9f6fd;
-    display: block;
-    width: 100%;
+    width: 5rem;
   }
 }

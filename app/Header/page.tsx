@@ -8,9 +8,22 @@ export default function Headerpage() {
       <div className={styles.sub_header}>
         <div className={styles.header}>
           <div className={styles.header_images}>
-            <Link href="./">
-              <Image src="/Logo.svg" alt="Logo image" height={40} width={190} />
-            </Link>
+            <Image
+              className="img"
+              src="/Logo.svg"
+              alt="Logo image"
+              height={40}
+              width={190}
+            />
+          </div>
+          <div className={styles.header_image}>
+            <Image
+              className="img"
+              src="/Logo.svg"
+              alt="Logo image"
+              height={30}
+              width={150}
+            />
           </div>
           <div className={styles.header_button}>
             <button>Get in touch</button>

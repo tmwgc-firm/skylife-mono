@@ -84,6 +84,7 @@ export default function Home() {
             </div>
             <div className={styles.left_grid_get}>
               <p>Get in touch</p>
+
               <Image src={"/arrow.svg"} width={50} height={50} alt="arrow" />
             </div>
           </div>

@@ -95,11 +95,11 @@ const FAQSection = () => {
             </div>
           ))}
         </div>
-
-        {/* Add your right section content here */}
-
+        {/* Add your right section content here */}1
         <div className="rightsection">
-          <p className="specialheading">FREQUENTLY ASKED QUESTIONS</p>
+          <div className="left_line">
+            <p>FREQUENTLY ASKED QUESTIONS</p>
+          </div>
           <h2>
             Get the Answers You Need<span className="dot">.</span>
           </h2>

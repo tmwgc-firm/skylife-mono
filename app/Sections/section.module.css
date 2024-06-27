@@ -439,7 +439,7 @@
   border: 1px solid #dddddd;
   border-radius: 10px;
   height: 80px;
-  width: 624px;
+  /* width: 100%; */
 }
 
 .messagebox > input {
@@ -453,7 +453,7 @@
   color: #00a9ff;
   border: 1px solid var(--Primary, #00a9ff);
   border-radius: 10px;
-  width: 624px;
+  /* width: 624px; */
   height: 40px;
   align-content: center;
   justify-self: center;
@@ -623,35 +623,43 @@
 @media (min-width: 320px) and (max-width: 650px) {
   .page_top {
     display: grid;
-    padding: 0;
+    padding: 15px;
+    max-width: 38%;
   }
   .page_too_find {
     display: grid;
     grid-auto-flow: row;
-    padding: 0 50px;
+    padding: 0 15px;
 
     /* text-align: center; */
   }
   .animation {
-    display: grid;
-    justify-self: flex-start;
-    padding-left: 150px;
+    display: none;
+    /* display: grid;
+    justify-self: flex-start; */
+    /* padding-left: 150px; */
   }
   .left_line {
-    font-size: 25px;
+    font-size: 12px;
     /* line-height: 13px; */
-    padding: 5px 0;
-    letter-spacing: 1px;
+    padding: 1px 0;
+    /* letter-spacing: 1px; */
   }
   .whoweare {
     display: grid;
+    row-gap: 10px;
+    padding: 0;
   }
   .whoweare h2 {
     display: grid;
-    font-size: 55px;
+    font-size: 24px;
+    max-width: 24rem;
+    font-weight: 700;
   }
   .whoweare p {
-    font-size: 22px;
+    font-size: 12px;
+    max-width: 18rem;
+    font-weight: 500;
   }
   .border {
     display: none;
@@ -688,7 +696,8 @@
   }
   .page_three {
     display: grid;
-    padding: 50px 0;
+    padding: 20px 0;
+    max-width: 38%;
   }
 
   .page_three .flex {
@@ -706,6 +715,8 @@
     display: grid;
     grid-auto-flow: row;
     row-gap: 30px;
+    padding: 10px;
+    max-width: 45%;
   }
   .flex {
     display: grid;
@@ -718,51 +729,51 @@
   .flex_one {
     border: 1px solid #00a9ff;
     border-radius: 10px;
-    width: 600px;
-    height: 830px;
+    width: 290px;
+    height: 464px;
     display: grid;
-    row-gap: 30px;
-    padding: 30px;
+    row-gap: 10px;
+    padding: 10px;
   }
   .flex_one img {
-    width: 94px;
-    height: 94px;
+    width: 44px;
+    height: 44px;
   }
   .flex_two img {
-    width: 94px;
-    height: 94px;
+    width: 44px;
+    height: 44px;
   }
   .flex_one p:nth-child(2) {
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
     font-family: var(--font-work);
   }
   .flex_one p:nth-child(3) {
     color: #333333;
-    font-size: 35px;
+    font-size: 18px;
     font-weight: 700;
     font-family: var(--font-roboto);
   }
   .flex_one p:nth-child(4) {
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 27px;
+    line-height: 15px;
     font-family: var(--font-work);
   }
   .flex_one p:nth-child(5) {
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 27px;
+    line-height: 15px;
     font-family: var(--font-work);
   }
   .flex_one p:nth-child(6) {
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 27px;
+    line-height: 15px;
     font-family: var(--font-work);
   }
   .flex_one:hover {
@@ -777,44 +788,44 @@
   .flex_two {
     border: 1px solid #00a9ff;
     border-radius: 10px;
-    width: 600px;
-    height: 780px;
+    width: 290px;
+    height: 384px;
     display: grid;
-    row-gap: 30px;
-    padding: 30px;
+    row-gap: 10px;
+    padding: 10px;
   }
 
   .flex_two p:nth-child(2) {
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
     font-family: var(--font-work);
   }
   .flex_two p:nth-child(3) {
     color: #333333;
-    font-size: 35px;
+    font-size: 18px;
     font-weight: 700;
     font-family: var(--font-roboto);
   }
   .flex_two p:nth-child(4) {
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 15px;
     font-family: var(--font-work);
   }
   .flex_two p:nth-child(5) {
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 15px;
     font-family: var(--font-work);
   }
   .flex_two p:nth-child(6) {
     color: #777777;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 15px;
     font-family: var(--font-work);
   }
   .flex_two:hover {
@@ -828,47 +839,57 @@
   }
   .left_line p {
     color: #00a9ff;
-    font-size: 25px;
-    padding: 5px 0;
+    font-size: 12px;
+    padding: 1px 0;
     font-family: var(--font-work);
+  }
+  .getstarted {
+    display: grid;
+    row-gap: 10px;
   }
   .getstarted p {
-    font-size: 22px;
+    font-size: 12px;
     font-family: var(--font-work);
-    max-width: 40rem;
+    max-width: 20rem;
   }
-  .name {
-    width: 100%;
+  .getstarted h2 {
+    font-size: 22px;
+    max-width: 20rem;
   }
+
   .namesub {
     display: grid;
     grid-auto-flow: row;
     row-gap: 10px;
-    padding: 0 40px;
+
+    justify-content: flex-start;
+    /* padding: 0 40px; */
   }
   .emailphone {
     display: grid;
     grid-auto-flow: row;
+    justify-content: flex-start;
     row-gap: 10px;
-    padding: 0 40px;
+    /* padding: 0 40px; */
   }
-  .name {
-    width: 610px;
+  .message {
+    display: grid;
+    justify-content: flex-start;
   }
 
   .form {
     padding: 40px 0;
     height: 450px;
+    max-width: 43%;
     display: grid;
     row-gap: 10px;
   }
   .formline input {
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
     font-size: 16px;
   }
   .messagebox input {
-    width: 100%;
     padding: 10px;
     font-size: 16px;
   }

@@ -55,6 +55,9 @@
   height: 2px;
   background-color: #cbecfd;
 }
+.header_image {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .header > button {
@@ -67,12 +70,18 @@
   .header {
     max-width: 100%;
     justify-content: space-between;
-    margin-top: 10px;
+    padding: 15px 0;
+  }
+  .header_images {
+    display: none;
+  }
+  .header_image {
+    display: block;
   }
 
-  .header > button {
+  .header button {
     width: 105px;
-    height: 30px;
+    height: 35px;
     font-size: 12px;
   }
 }
