@@ -218,11 +218,11 @@
   }
   .hero {
     /* height: 650px; */
-    /* height: 100vh; */
+    height: 75vh;
     /* width: 100%; */
-    max-width: 45%;
+    /* max-width: 45%; */
     background-image: url("/mobilefetchpik.svg");
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -231,7 +231,7 @@
   .tab_color {
     background-color: #e9f6fd;
     display: block;
-    width: 45%;
+    width: 100%;
   }
   .left_line p {
     font-size: 12px;
