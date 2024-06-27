@@ -217,12 +217,12 @@
     /* width: -webkit-fill-available; */
   }
   .hero {
-    height: 310px;
-    height: 78vh;
+    /* height: 310px; */
+    height: 100vh;
     /* width: 100%; */
     max-width: 100%;
     background-image: url("/mobilefetchpik.svg");
-    background-size: cover;
+    /* background-size: contain; */
     background-position-x: center;
     background-repeat: no-repeat;
     /* position: relative; */
@@ -234,7 +234,7 @@
     width: 100%;
   }
   .left_line p {
-    font-size: 20px;
+    font-size: 12px;
     /* line-height: 13px; */
     padding: 2px 0;
     letter-spacing: 1px;
@@ -250,10 +250,9 @@
   .left_grid {
     max-width: 100%;
     display: grid;
-    row-gap: 30px;
-    padding: 20px 20px 40px 50px;
+    row-gap: 15px;
+    padding: 10px 20px 40px 15px;
   }
-
   .dot {
     color: #00a9ff;
   }
@@ -264,13 +263,14 @@
     color: #333333;
     line-height: 44.94px;
     max-width: 50rem;
+    font-family: "san";
   }
 
   .left_container_roboto h1 {
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 800;
-    line-height: 56.47px;
-    max-width: 29rem;
+    line-height: 34.47px;
+    max-width: 18rem;
     font-family: var(--font-roboto);
   }
   .left_grid_get {
@@ -282,13 +282,13 @@
     font-size: 14px;
   }
   .left_grid_para {
-    max-width: 31rem;
+    max-width: 50rem;
     color: #777777;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 16px;
+
     display: grid;
-    grid-row-gap: 5px;
     row-gap: 5px;
     font-family: var(--font-work);
   }
@@ -298,9 +298,9 @@
     border: 2px;
   }
   .left_grid_get p {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     color: #00a9ff;
-    width: 7rem;
+    width: 5rem;
   }
 }
