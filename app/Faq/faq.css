@@ -149,7 +149,7 @@
     display: grid;
     justify-content: center;
     row-gap: 10px;
-    max-width: 43%;
+    max-width: 100%;
   }
   .faq-container {
     display: grid;

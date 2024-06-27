@@ -218,7 +218,7 @@
   .footer_parent {
     display: grid;
     grid-auto-flow: row;
-    max-width: 43%;
+    max-width: 100%;
     /* justify-content: flex-start; */
   }
 

@@ -624,7 +624,7 @@
   .page_top {
     display: grid;
     padding: 15px;
-    max-width: 38%;
+    max-width: 100%;
   }
   .page_too_find {
     display: grid;
@@ -697,7 +697,7 @@
   .page_three {
     display: grid;
     padding: 20px 0;
-    max-width: 38%;
+    max-width: 100%;
   }
 
   .page_three .flex {
@@ -716,7 +716,7 @@
     grid-auto-flow: row;
     row-gap: 30px;
     padding: 10px;
-    max-width: 45%;
+    max-width: 100%;
   }
   .flex {
     display: grid;
@@ -880,7 +880,7 @@
   .form {
     padding: 40px 0;
     height: 450px;
-    max-width: 43%;
+    max-width: 100%;
     display: grid;
     row-gap: 10px;
   }
