@@ -26,12 +26,12 @@ export default function page() {
           <p>
             Welcome to <span>SKY FINANCIAL</span>, where we prioritize
             protecting your future above all else. Our About Us section offers a
-            glimpse into who we are, our values, and why we're dedicated to
+            glimpse into who we are, our values, and why we&apos;re dedicated to
             ensuring your peace of mind. Meet our experienced team, learn about
             our history, and discover how our personalized approach to life
-            insurance can safeguard your loved ones' financial security. At
-            [Agency Name], we're here to guide you toward a future of confidence
-            and security.
+            insurance can safeguard your loved ones&apos; financial security. At
+            [Agency Name], we&apos;re here to guide you toward a future of
+            confidence and security.
           </p>
           <div className={styles.footer_details}>
             <div className={styles.footer_phone}>

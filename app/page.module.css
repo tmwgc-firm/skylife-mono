@@ -585,6 +585,9 @@ details[open] .accordion_header {
   max-width: 30rem;
   font-family: var(--font-work);
 }
+.tab_imagecontent {
+  display: none;
+}
 
 /* Mobile view */
 
@@ -603,6 +606,7 @@ details[open] .accordion_header {
     background-image: none;
     padding: unset;
   }
+
   .imagecontent h1 {
     max-width: 20rem;
     font-size: 32px;
@@ -832,26 +836,37 @@ details[open] .accordion_header {
 
 @media (min-width: 651px) and (max-width: 1024px) {
   .img1 {
-    background-image: url(/_next/static/media/img.34d0cf4c.svg);
+    position: relative;
+    background-position: right;
+    height: 100vh;
+  }
+
+  .img1_mob {
+    background-image: url("/fami.svg");
     background-size: cover;
     background-position-x: right;
-    height: 150vh;
+
+    /* height: 150vh; */
   }
   .imagecontent {
+    display: none;
+  }
+  .tab_imagecontent {
     display: grid;
-    grid-row-gap: 10px;
-    row-gap: 10px;
-    grid-row-gap: 24px;
-    row-gap: 24px;
-    padding: 31px 0 0 31px;
+    padding: 10px 10px 40px 26px;
+    gap: 16px;
+    background: #e9f6fd;
+  }
+  .imagecontent_welcome h1 {
+    font-size: 54px;
   }
   .imagecontent h1 {
     font-size: 20px;
-    width: 357px;
+    max-width: 40rem;
   }
 
   .imagecontent_para {
-    max-width: 19rem;
+    max-width: 29rem;
     row-gap: 7px;
   }
   .secondphase {
@@ -860,12 +875,65 @@ details[open] .accordion_header {
     padding: 35px 40px 0px;
     place-items: center;
   }
+  .secondphase_subpara_two {
+    max-width: 40rem;
+  }
 
   .thirdphase {
     grid-auto-flow: row;
     row-gap: 61px;
     padding: 50px 34px;
     /* justify-content: unset; */
+  }
+  .page_three {
+    padding: 60px 0 100px 0;
+  }
+  .border {
+    display: none;
+  }
+  .blueline {
+    height: 50px;
+    width: 1px;
+    background-color: #00a9ff;
+    position: relative;
+  }
+  .bluelinetwo {
+    display: block;
+    height: 50px;
+    width: 1px;
+    background-color: #00a9ff;
+    position: relative;
+    justify-self: center;
+  }
+  .flextwoline {
+    display: grid;
+    justify-items: center;
+  }
+  .flex {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 0;
+  }
+  .flex_one {
+    padding: 10px;
+    width: 320px;
+    height: 500px;
+    display: grid;
+    row-gap: 10px;
+  }
+
+  .flex_two {
+    padding: 10px;
+    width: 320px;
+    height: 450px;
+  }
+  .flex_one img {
+    width: 44px;
+    height: 44px;
+  }
+  .flex_two img {
+    width: 44px;
+    height: 44px;
   }
 
   .thirdphase_form {

@@ -76,3 +76,9 @@
     font-size: 14px;
   }
 }
+
+@media (min-width: 651px) and (max-width: 1024px) {
+  .privacy {
+    padding: 25px;
+  }
+}

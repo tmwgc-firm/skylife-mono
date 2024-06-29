@@ -22,7 +22,7 @@ export default function pages() {
                   <p>WELCOME TO SKY FINANCIAL</p>
                 </div>
                 <h1>
-                  Life's a Journey, Fly Confidently with our Protection
+                  Life&apos;s a Journey, Fly Confidently with our Protection
                   <span className={styles.dot}>.</span>
                 </h1>
               </div>
@@ -47,6 +47,39 @@ export default function pages() {
                 <div>
                   <Image src="/Arrow.svg" alt="arrow" width={24} height={24} />
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.tab_imagecontent}>
+            <div className={styles.imagecontent_welcome}>
+              <div className={styles.left_line}>
+                <p>WELCOME TO SKY FINANCIAL</p>
+              </div>
+              <h1>
+                Life&apos;s a Journey, Fly Confidently with our Protection
+                <span className={styles.dot}>.</span>
+              </h1>
+            </div>
+            <div className={styles.imagecontent_para}>
+              <p>
+                At Sky Financial, we specialize in providing comprehensive life
+                insurance and annuity options tailored to meet the unique needs
+                of individuals across all age groups and income levels. As a
+                licensed provider in all 50 states, we are dedicated to helping
+                clients nationwide secure their financial futures with
+                innovative insurance solutions.
+              </p>
+              <p>
+                Explore our website to learn more about our products and how we
+                can help you achieve peace of mind and financial security.
+              </p>
+            </div>
+            <div className={styles.buttontwo}>
+              <div className={styles.get_in}>
+                <p>Get in touch</p>
+              </div>
+              <div>
+                <Image src="/Arrow.svg" alt="arrow" width={24} height={24} />
               </div>
             </div>
           </div>
@@ -78,9 +111,9 @@ export default function pages() {
                 Our dedicated team of agents is committed to providing
                 personalized service and innovative solutions tailored to meet
                 the unique needs of each client. We understand that every
-                individual's financial situation is different, and we take the
-                time to listen and recommend the best options for your needs and
-                goals.
+                individual&apos;s financial situation is different, and we take
+                the time to listen and recommend the best options for your needs
+                and goals.
               </p>
               <p>
                 At Sky Financial, we are passionate about helping our clients
@@ -117,7 +150,7 @@ export default function pages() {
                 maximize your retirement savings and enjoy a worry-free future.
               </p>
               <p>
-                Whether you're looking for immediate income or a deferred
+                Whether you&apos;re looking for immediate income or a deferred
                 annuity to supplement your retirement savings, our team of
                 experts will help you navigate the options and find the right
                 solution for your needs.
@@ -137,12 +170,12 @@ export default function pages() {
                 <p>
                   Comprehensive Coverage for Peace of Mind: Our life insurance
                   plans offer robust protection, ensuring you and your family
-                  can face life's uncertainties with confidence.
+                  can face life&apos;s uncertainties with confidence.
                 </p>
                 <p>
-                  Whether you're a young family just starting out or a retiree
-                  looking to leave a legacy, our experienced agents will work
-                  closely with you to understand your needs and goals, and
+                  Whether you&apos;re a young family just starting out or a
+                  retiree looking to leave a legacy, our experienced agents will
+                  work closely with you to understand your needs and goals, and
                   recommend a policy that fits your budget and lifestyle.
                 </p>
                 <p>
@@ -170,7 +203,7 @@ export default function pages() {
               </p>
               <p>
                 Similarly, annuities offer tax-deferred growth, meaning you
-                won't pay taxes on your earnings until you start receiving
+                won&apos;t pay taxes on your earnings until you start receiving
                 income. This allows your retirement savings to grow faster and
                 gives you more control over when you pay taxes.
               </p>
@@ -197,7 +230,7 @@ export default function pages() {
               Contact{" "}
               <span className={styles.thirdphase_subword}>SKY FINANCIAL </span>
               today to schedule a consultation with one of our experienced
-              agents. We're here to answer your questions, address your
+              agents. We&apos;re here to answer your questions, address your
               concerns, and help you find the perfect insurance solutions for
               your needs.
             </p>

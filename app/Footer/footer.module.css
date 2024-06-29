@@ -134,19 +134,20 @@
   }
 
   #img-mob {
-    display: unset;
+    display: block;
   }
 
-  /* .footer-bottom{
+  .footer_navigate {
+    display: grid;
+    justify-content: end;
+  }
+  .footer_bottom {
+    display: grid;
+    justify-content: end;
     grid-auto-flow: row;
-    gap:16px;
-    padding: 16px 24px;
-  } */
-
-  /* .footer-navigate ul{
-    display: flex;
-    justify-content: space-between;
-  } */
+    padding: 24px 10px;
+    row-gap: 10px;
+  }
 
   .footer_top p {
     max-width: 969px;
