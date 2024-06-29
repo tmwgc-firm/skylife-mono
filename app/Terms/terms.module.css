@@ -78,7 +78,11 @@
     row-gap: 20px;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 650px) {
+  .maingrid {
+    display: unset;
+  }
+
   .subgrid {
     display: grid;
     grid-auto-flow: row; /* Ensure grid items flow in rows */
@@ -92,11 +96,13 @@
   }
 
   .linkpage1 {
-    margin: 5px;
     display: block;
+  }
+  .privacy {
+    padding: 15px;
   }
 
   .minihead {
-    padding: 5px;
+    padding: 24px 15px 0 17px;
   }
 }

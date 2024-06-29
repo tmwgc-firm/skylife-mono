@@ -1,7 +1,6 @@
 .linkpage1 {
   display: grid;
   grid-auto-flow: row;
-  margin: 30px;
 }
 
 .maingrid {
@@ -48,17 +47,13 @@
   font-family: var(--font-work);
   color: #777777;
 }
-.linkpage1 {
-  padding: 20px;
-}
 
 .dot {
   color: #00a9ff;
 }
 @media (min-width: 320px) and (max-width: 650px) {
   .maingrid {
-    display: grid;
-    grid-auto-flow: row;
+    display: unset;
   }
   .subgrid {
     display: grid;
@@ -67,5 +62,17 @@
   .gridContent {
     display: grid;
     grid-auto-flow: row;
+  }
+  .gridContent h4 {
+    font-size: 16px;
+  }
+  .gridContent p {
+    font-size: 12px;
+  }
+  .privacy {
+    padding: 10px 10px 0 10px;
+  }
+  .minihead p:nth-child(3) {
+    font-size: 14px;
   }
 }

@@ -1,24 +1,4 @@
-/* Header page css*/
-
-/* .header {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
-    border-bottom: 1px solid #CBECFD;
-    height: 70px;
-} */
-
-/* .header>button {
-    background-color: #00A9FF;
-    color: #FFFFFF;
-    text-align: center;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    width: 134px;
-    height: 40px;
-    cursor: pointer;
-} */
+/* 
 
 .top_header {
   max-width: 100%;
@@ -68,7 +48,7 @@
 
 @media (min-width: 320px) and (max-width: 650px) {
   .header {
-    max-width: 100%;
+    max-width: 45%;
     justify-content: space-between;
     padding: 15px 0;
   }
@@ -83,5 +63,122 @@
     width: 105px;
     height: 35px;
     font-size: 12px;
+  }
+} */
+/* .top_header {
+  display: grid;
+  justify-items: center;
+}
+
+.header {
+  display: grid;
+ 
+  padding: 16px 0px;
+  grid-auto-flow: row;
+  row-gap: 10px;
+  width: 90%;
+  text-align: -webkit-center;
+}
+.logo_button {
+  display: grid;
+  column-gap: 25px;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+.button1 button {
+  width: 134px;
+  height: 40px;
+  padding: 12px, 24px, 12px, 24px;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: #00a9ff;
+  border: none;
+  outline: none;
+  color: aliceblue;
+}
+.header_line {
+  height: 1px;
+  display: grid;
+  width: 90%;
+  background-color: #cbecfd;
+}
+.head_foot {
+  display: grid;
+  width: 90%;
+  justify-items: center;
+} */
+.top_header {
+  max-width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.sub_header {
+  display: grid;
+  width: 90%;
+}
+
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px 24px 0px;
+}
+
+.header_button button {
+  width: 134px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 24px, 12px, 24px;
+  gap: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #00a9ff;
+}
+.header_line {
+  height: 2px;
+  background-color: #cbecfd;
+}
+
+/* Mobile View */
+@media (min-width: 320px) and (max-width: 650px) {
+  .top_header {
+    background-color: #eef6ff;
+  }
+
+  .header img {
+    width: 150px;
+    width: 150px;
+  }
+
+  .header {
+    display: grid;
+    align-items: center;
+    padding: 16px 0px;
+  }
+
+  .header button {
+    align-self: flex-end;
+    width: 120px;
+    height: 35px;
+    padding: 12px, 24px, 12px, 24px;
+    border-radius: 10px;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .header img {
+    max-height: 60px;
+  }
+
+  .header button {
+    padding: 12px 24px;
   }
 }

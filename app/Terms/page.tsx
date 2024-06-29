@@ -41,9 +41,20 @@ const Page: React.FC = () => {
                   className="flexContent"
                   style={{ display: "grid", rowGap: "10px" }}
                 >
-                  <h4 style={{ fontFamily: "var(--font-roboto)" }}>{key}</h4>
+                  <h4
+                    style={{
+                      fontFamily: "var(--font-roboto)",
+                      fontSize: "16px",
+                    }}
+                  >
+                    {key}
+                  </h4>
                   <p
-                    style={{ fontFamily: "var(--font-work)", color: "#777777" }}
+                    style={{
+                      fontFamily: "var(--font-work)",
+                      color: "#777777",
+                      fontSize: "12px",
+                    }}
                   >
                     {value}
                   </p>

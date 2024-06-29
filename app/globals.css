@@ -136,10 +136,7 @@ a {
   text-decoration: none;
   color: white;
 }
-html {
-  max-width: 100%;
-  display: grid;
-}
+
 button {
   font-family: var(--font-work);
 }
