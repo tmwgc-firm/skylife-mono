@@ -83,7 +83,12 @@ export default function Form() {
               <div className={styles.input_gap}>
                 <div className={styles.input_form}>
                   <div>
-                    <img src="/formuser.svg" />
+                    <Image
+                      src="/formuser.svg"
+                      alt="user"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                   <div className={styles.inputGroup}>
                     <input
@@ -102,7 +107,12 @@ export default function Form() {
                 </div>
                 <div className={styles.input_form}>
                   <div>
-                    <img src="/formuser.svg" />
+                    <Image
+                      src="/formuser.svg"
+                      alt="user"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                   <div className={styles.inputGroup}>
                     <input
@@ -123,7 +133,12 @@ export default function Form() {
               <div className={styles.input_gap}>
                 <div className={styles.input_form}>
                   <div>
-                    <img src="/formmail.svg" />
+                    <Image
+                      src="/formmail.svg"
+                      alt="user"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                   <div className={styles.inputGroup}>
                     <input
@@ -142,7 +157,12 @@ export default function Form() {
                 </div>
                 <div className={styles.input_form}>
                   <div>
-                    <img src="/formphone.svg" />
+                    <Image
+                      src="/formphone.svg"
+                      alt="user"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                   <div className={styles.inputGroup}>
                     <input

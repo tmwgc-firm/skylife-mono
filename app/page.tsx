@@ -4,6 +4,8 @@ import Header from "./Header/page";
 import Form from "./Form/page";
 
 import Link from "next/link";
+import FAQSection from "./Faq/page";
+import Image from "next/image";
 
 export default function pages() {
   return (
@@ -43,7 +45,7 @@ export default function pages() {
                   <p>Get in touch</p>
                 </div>
                 <div>
-                  <img src="/Arrow.svg" />
+                  <Image src="/Arrow.svg" alt="arrow" width={24} height={24} />
                 </div>
               </div>
             </div>
@@ -53,9 +55,7 @@ export default function pages() {
         {/* second phase  */}
         <div className={styles.secondphase}>
           <div>
-            <img src="/anime1.svg" />
-            {/* <img src="/anime2-desk.svg" className="image" /> */}
-            {/* <img src='/anime3-desk.svg'className='image'/>  */}
+            <Image src="/anime1.svg" alt="animation" width={584} height={444} />
           </div>
           <div className={styles.secondphase_para}>
             <div className={styles.secondphase_subpara_one}>
@@ -96,7 +96,12 @@ export default function pages() {
 
           <div className={styles.flex}>
             <div className={styles.flex_one}>
-              <img src="/flow-group.svg" />
+              <Image
+                src="/flow-group.svg"
+                alt="flexone"
+                width={64}
+                height={64}
+              />
               <p>ANNUTIES</p>
               <p>Secure Your Retirement</p>
               <p>
@@ -121,7 +126,12 @@ export default function pages() {
             <div className={styles.flextwoline}>
               <div className={styles.blueline}></div>
               <div className={styles.flex_two}>
-                <img src="/flow-hand-holding-heart.svg" />
+                <Image
+                  src="/flow-hand-holding-heart.svg"
+                  alt="flexone"
+                  width={64}
+                  height={64}
+                />
                 <p>LIFE INSURANCE</p>
                 <p>Protecting What Matters Most</p>
                 <p>
@@ -143,7 +153,12 @@ export default function pages() {
             </div>
             <div className={styles.bluelinetwo}></div>
             <div className={styles.flex_one}>
-              <img src="/flow-profit.svg" />
+              <Image
+                src="/flow-profit.svg"
+                alt="flexone"
+                width={64}
+                height={64}
+              />
               <p>TAX BENEFIT PROGRAMS</p>
               <p>Maximize Your Savings</p>
               <p>
@@ -192,211 +207,7 @@ export default function pages() {
           </div>
         </div>
 
-        {/*fourth phase*/}
-        <div className={styles.fourthphase}>
-          <div className={styles.accordion}>
-            <details className={styles.accordion_item}>
-              <summary className={styles.accordion_header}>
-                <span className={styles.accordion_title}>
-                  How much life insurance do I actually need?
-                </span>
-                <img
-                  src="scrolldown.svg"
-                  alt="Symbol 1"
-                  className={styles.accordion_icon}
-                />
-              </summary>
-              <div className={styles.accordion_content}>
-                <p>
-                  Determining your life insurance needs depends on various
-                  factors like your income, debts, and future expenses.
-                </p>
-                <br />
-                <p>
-                  A general rule of thumb is to aim for coverage that's 5-10
-                  times your annual income.
-                </p>
-                <br />
-                <p>
-                  However, it's crucial to consider your specific circumstances,
-                  such as outstanding debts, education expenses for dependents,
-                  and future financial goals.
-                </p>
-                <br />
-                <p>
-                  Consulting with our financial advisor can help tailor a policy
-                  that adequately protects your loved ones and aligns with your
-                  long-term plans.
-                </p>
-              </div>
-            </details>
-            <details className={styles.accordion_item}>
-              <summary className={styles.accordion_header}>
-                <span className={styles.accordion_title}>
-                  How can I be sure I'm getting the best rates?
-                </span>
-                <img
-                  src="scrolldown.svg"
-                  alt="Symbol 2"
-                  className={styles.accordion_icon}
-                />
-              </summary>
-              <div className={styles.accordion_content}>
-                <p>
-                  At our agency, ensuring you get the best rates is our
-                  priority.
-                </p>
-                <br />
-                <p>
-                  We leverage our extensive network and expertise to scout for
-                  the most competitive offers tailored to your needs.
-                </p>
-                <br />
-                <p>
-                  Our transparent approach means you'll always know you're
-                  getting the best deal available.{" "}
-                </p>
-                <br />
-                <p>
-                  We continuously monitor the market to keep your rates
-                  optimized. Trust in our commitment to securing your financial
-                  future at the most favourable terms.
-                </p>
-              </div>
-            </details>
-            <details className={styles.accordion_item}>
-              <summary className={styles.accordion_header}>
-                <span className={styles.accordion_title}>
-                  How long does it take to get approved for life insurance
-                  coverage?
-                </span>
-                <img
-                  src="scrolldown.svg"
-                  alt="Symbol 3"
-                  className={styles.accordion_icon}
-                />
-              </summary>
-              <div className={styles.accordion_content}>
-                <p>
-                  The approval process for life insurance coverage typically
-                  ranges from a few days to several weeks.
-                </p>
-                <br />
-                <p>
-                  Factors such as the type of policy, your health, and the
-                  insurer's underwriting process influence the timeline.
-                </p>
-                <br />
-                <p>
-                  Generally, simpler policies like term life insurance may be
-                  approved more quickly, while complex policies or those
-                  requiring medical exams may take longer.
-                </p>
-                <br />
-                <p>
-                  Rest assured, we strive to expedite the process while ensuring
-                  thoroughness to provide you with the best coverage
-                  efficiently.
-                </p>
-              </div>
-            </details>
-            <details className={styles.accordion_item}>
-              <summary className={styles.accordion_header}>
-                <span className={styles.accordion_title}>
-                  What happens if I outlive the term of my life insurance
-                  policy?
-                </span>
-                <img
-                  src="scrolldown.svg"
-                  alt="Symbol 4"
-                  className={styles.accordion_icon}
-                />
-              </summary>
-              <div className={styles.accordion_content}>
-                <p>
-                  If you outlive the term of your life insurance policy, there
-                  are several options available.
-                </p>
-                <br />
-                <p>
-                  You can choose to renew the policy, convert it to a permanent
-                  life insurance policy if available, or simply let it expire.{" "}
-                </p>
-                <br />
-                <p>
-                  It's important to review your options with your insurance
-                  provider to determine the best course of action based on your
-                  current needs and financial situation.
-                </p>
-                <br />
-                <p>
-                  Additionally, some policies may offer the option to receive a
-                  pay-out of the premiums paid, though this varies depending on
-                  the terms of your policy.
-                </p>
-              </div>
-            </details>
-            <details className={styles.accordion_item}>
-              <summary className={styles.accordion_header}>
-                <span className={styles.accordion_title}>
-                  How can I ensure my life insurance policy adequately protects
-                  my loved ones?
-                </span>
-                <img
-                  src="scrolldown.svg"
-                  alt="Symbol 5"
-                  className={styles.accordion_icon}
-                />
-              </summary>
-              <div className={styles.accordion_content}>
-                <p>
-                  To ensure your life insurance adequately protects your loved
-                  ones, start by assessing your family's financial needs and
-                  future obligations.
-                </p>
-                <br />
-                <p>
-                  Consider factors like mortgage payments, education expenses,
-                  and living costs.{" "}
-                </p>
-                <br />
-                <p>
-                  Next, work closely with our expert advisors to tailor a policy
-                  that aligns with your unique circumstances and provides
-                  sufficient coverage.{" "}
-                </p>
-                <br />
-                <p>
-                  Regularly review and update your policy to accommodate any
-                  changes in your life situation.{" "}
-                </p>
-                <br />
-                <p>
-                  Rest assured, our commitment to personalized guidance ensures
-                  your loved ones are safeguarded against life's uncertainties.
-                </p>
-              </div>
-            </details>
-          </div>
-          <div className={styles.fourth_sub_two}>
-            <div className={styles.left_line}>
-              <p>FREQUENTLY ASKED QUESTIONS</p>
-            </div>
-            <h1>
-              Get the Answers You Need<span>.</span>
-            </h1>
-            <div>
-              <p>
-                Have questions about life insurance? Explore our FAQs for clear,
-                concise answers to help you make informed decisions about your
-                coverage options.
-              </p>
-            </div>
-            <img src="/fourthphase-man.svg" id="fourth-img" />
-          </div>
-        </div>
-        <div>{/* <Footer/> */}</div>
-        {/* <script src="/Components/Form/form.js"></script> */}
+        <FAQSection />
       </div>
     </>
   );
