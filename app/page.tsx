@@ -79,7 +79,7 @@ export default function pages() {
               <div className={styles.get_in}>
                 <p>Get in touch</p>
               </div>
-              <div>
+              <div className={styles.svg_arr}>
                 <Image src="/Arrow.svg" alt="arrow" width={24} height={24} />
               </div>
             </div>
