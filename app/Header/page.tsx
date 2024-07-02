@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function page() {
+export default function Page() {
   useEffect(() => {
     const scrollButton = document.getElementById("scrollButton");
 
