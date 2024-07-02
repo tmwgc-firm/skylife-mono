@@ -22,12 +22,27 @@ export default function Form() {
   });
 
   const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [touched, setTouched] = useState<
+    Partial<{ [key in keyof FormData]: boolean }>
+  >({});
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
+    }));
+  };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    const { name } = e.target;
+    setTouched((prevState) => ({
+      ...prevState,
+      [name]: true,
+    }));
+    setErrors((prevState) => ({
+      ...prevState,
+      [name]: formData[name as keyof FormData] ? "" : "Required",
     }));
   };
 
@@ -81,121 +96,137 @@ export default function Form() {
           <form className={styles.sub_form} onSubmit={handleSubmit}>
             <div className={styles.overall_form}>
               <div className={styles.input_gap}>
-                <div className={styles.input_form}>
-                  <div>
-                    <Image
-                      src="/formuser.svg"
-                      alt="user"
-                      width={20}
-                      height={20}
-                    />
+                <div>
+                  <div className={styles.input_form}>
+                    <div>
+                      <Image
+                        src="/formuser.svg"
+                        alt="user"
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className={styles.inputGroup}>
+                      <input
+                        placeholder="Name"
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className="input"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div className={styles.inputGroup}>
-                    <input
-                      placeholder="Name"
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="input"
-                      required
-                    />
-                    {errors.name && (
-                      <span className={styles.error}>{errors.name}</span>
-                    )}
-                  </div>
+                  {errors.name && (
+                    <span className={styles.error}>{errors.name}</span>
+                  )}
                 </div>
-                <div className={styles.input_form}>
-                  <div>
-                    <Image
-                      src="/formuser.svg"
-                      alt="user"
-                      width={20}
-                      height={20}
-                    />
+                <div>
+                  <div className={styles.input_form}>
+                    <div>
+                      <Image
+                        src="/formuser.svg"
+                        alt="user"
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className={styles.inputGroup}>
+                      <input
+                        placeholder="Subject"
+                        type="text"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className="input"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div className={styles.inputGroup}>
-                    <input
-                      placeholder="Subject"
-                      type="text"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="input"
-                      required
-                    />
-                    {errors.subject && (
-                      <span className={styles.error}>{errors.subject}</span>
-                    )}
-                  </div>
+                  {errors.subject && (
+                    <span className={styles.error}>{errors.subject}</span>
+                  )}
                 </div>
               </div>
+
               <div className={styles.input_gap}>
-                <div className={styles.input_form}>
-                  <div>
-                    <Image
-                      src="/formmail.svg"
-                      alt="user"
-                      width={20}
-                      height={20}
-                    />
+                <div className={styles.req}>
+                  <div className={styles.input_form}>
+                    <div>
+                      <Image
+                        src="/formmail.svg"
+                        alt="user"
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className={styles.inputGroup}>
+                      <input
+                        placeholder="E-mail"
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className="input"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div className={styles.inputGroup}>
-                    <input
-                      placeholder="E-mail"
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="input"
-                      required
-                    />
+                  <div>
                     {errors.email && (
                       <span className={styles.error}>{errors.email}</span>
                     )}
                   </div>
-                </div>
-                <div className={styles.input_form}>
-                  <div>
-                    <Image
-                      src="/formphone.svg"
-                      alt="user"
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className={styles.inputGroup}>
-                    <input
-                      placeholder="Phone"
-                      type="text"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="input"
-                      required
-                    />
-                    {errors.phone && (
-                      <span className={styles.error}>{errors.phone}</span>
-                    )}
-                  </div>
+                  <div className={styles.input_form}>
+                    <div>
+                      <Image
+                        src="/formphone.svg"
+                        alt="user"
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className={styles.inputGroup}>
+                      <input
+                        placeholder="Phone"
+                        type="text"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className="input"
+                        required
+                      />
+                    </div>
+                  </div>{" "}
+                  {errors.phone && (
+                    <span className={styles.error}>{errors.phone}</span>
+                  )}
                 </div>
               </div>
             </div>
-            <div className={styles.input_form_message}>
-              <div className={styles.inputGroup}>
-                <input
-                  placeholder="Message"
-                  type="text"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="input"
-                  required
-                />
-                {errors.message && (
-                  <span className={styles.error}>{errors.message}</span>
-                )}
+            <div>
+              <div className={styles.input_form_message}>
+                <div className={styles.inputGroup}>
+                  <input
+                    placeholder="Message"
+                    type="text"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="input"
+                    required
+                  />
+                </div>{" "}
               </div>
+              {errors.message && (
+                <span className={styles.error}>{errors.message}</span>
+              )}
             </div>
 
             <div className={styles.form_button}>

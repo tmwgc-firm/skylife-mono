@@ -84,7 +84,6 @@ export default function pages() {
             </div>
           </div>
         </div>
-
         {/* second phase  */}
         <div className={styles.secondphase}>
           <div>
@@ -216,8 +215,8 @@ export default function pages() {
             </div>
           </div>
         </div>
-
-        <div className={styles.thirdphase}>
+        {/* Fourth phase  */}
+        <div className={styles.thirdphase} id="formPage">
           <div className={styles.thirdphase_para}>
             <div className={styles.left_line}>
               <p>GET STARTED TODAY</p>
@@ -239,7 +238,6 @@ export default function pages() {
             <Form />
           </div>
         </div>
-
         <FAQSection />
       </div>
     </>

@@ -70,6 +70,14 @@
   color: green;
   justify-items: center;
 }
+.error {
+  padding: 10px 0;
+  color: red;
+}
+.req {
+  display: grid;
+  row-gap: 5px;
+}
 
 /* Mobile View  */
 

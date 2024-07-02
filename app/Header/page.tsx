@@ -1,9 +1,30 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function page() {
+  useEffect(() => {
+    const scrollButton = document.getElementById("scrollButton");
+
+    const scrollToFormPage = () => {
+      const formPage = document.getElementById("formPage")?.offsetTop;
+
+      window.scrollTo({
+        top: formPage,
+        behavior: "smooth",
+      });
+    };
+
+    if (scrollButton) {
+      scrollButton.addEventListener("click", scrollToFormPage);
+      return () => {
+        scrollButton.removeEventListener("click", scrollToFormPage);
+      };
+    }
+  }, []);
+
   return (
     <div className={styles.top_header}>
       <div className={styles.sub_header}>
@@ -14,7 +35,7 @@ export default function page() {
             </Link>
           </div>
           <div className={styles.header_button}>
-            <button>Get in touch</button>
+            <button id="scrollButton">Get in touch</button>
           </div>
         </div>
         <div className={styles.header_line}></div>

@@ -4,7 +4,7 @@ import "./faq.css";
 import Image from "next/image";
 
 const FAQSection = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null); // State to track active FAQ index
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const faqs = [
     {
@@ -58,7 +58,6 @@ const FAQSection = () => {
     },
   ];
 
-  // Function to toggle active state of FAQ item
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
@@ -95,7 +94,7 @@ const FAQSection = () => {
             </div>
           ))}
         </div>
-        {/* Add your right section content here */}
+
         <div className="rightsection">
           <div className="left_line">
             <p>FREQUENTLY ASKED QUESTIONS</p>

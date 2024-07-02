@@ -72,6 +72,9 @@
   gap: 10px;
   font-family: var(--font-work);
 }
+.get_in {
+  cursor: pointer;
+}
 
 /* Second Phase  */
 

@@ -8,20 +8,24 @@ export default function page() {
     <div className={styles.footer}>
       <div className={styles.footer_one}>
         <div className={styles.footer_top}>
-          <Image
-            src="/footer-logo.svg"
-            id="img-desk"
-            alt="footerlogo"
-            width={190}
-            height={40}
-          />
-          <Image
-            src="/logo.svg"
-            id="img-mob"
-            alt="footerlogo"
-            width={190}
-            height={40}
-          />
+          <div className={styles.footer_image_desk}>
+            <Image
+              src="/footer-logo.svg"
+              id="img-desk"
+              alt="footerlogo"
+              width={90}
+              height={108}
+            />
+          </div>
+          <div className={styles.footer_image_mobile}>
+            <Image
+              src="/logo.svg"
+              id="img-mob"
+              alt="footerlogo"
+              width={190}
+              height={40}
+            />
+          </div>
 
           <p>
             Welcome to <span>SKY FINANCIAL</span>, where we prioritize

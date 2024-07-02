@@ -27,6 +27,7 @@
   outline: none;
   color: white;
   background: #00a9ff;
+  cursor: pointer;
 }
 .header_line {
   height: 2px;

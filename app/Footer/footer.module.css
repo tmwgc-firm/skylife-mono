@@ -9,14 +9,16 @@
   font-family: "__Work_Sans_1fc36d";
   gap: 56px;
   border-top: solid #00a9ff;
+  align-items: center;
   border-width: 1px;
 }
 .footer_top img:nth-child(2) {
   display: none;
 }
-#img-mob {
+.footer_image_mobile {
   display: none;
 }
+
 .footer_top p {
   max-width: 606px;
   text-align: justify;
@@ -29,6 +31,7 @@
 }
 .footer_details {
   display: grid;
+  row-gap: 15px;
 }
 .footer_phone {
   display: grid;
@@ -87,12 +90,12 @@
     border-top: 1px solid #00a9ff;
   }
 
-  #img-desk {
+  .footer_image_desk {
     display: none;
   }
 
-  #img-mob {
-    display: unset;
+  .footer_image_mobile {
+    display: block;
   }
 
   .footer_details {
@@ -115,6 +118,10 @@
   .footer_top p {
     width: unset;
     font-family: var(--font-work);
+    padding: 0 10px 0 0;
+  }
+  .footer_copyright p {
+    font-size: 14px;
   }
 }
 
