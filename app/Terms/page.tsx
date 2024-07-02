@@ -50,10 +50,10 @@ const Page: React.FC = () => {
                     {key}
                   </h4>
                   <p
+                    className="sub_para"
                     style={{
                       fontFamily: "var(--font-work)",
                       color: "#777777",
-                      fontSize: "12px",
                     }}
                   >
                     {value}

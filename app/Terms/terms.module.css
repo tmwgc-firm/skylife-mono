@@ -1,13 +1,11 @@
 .linkpage1 {
   display: grid;
   grid-auto-flow: row;
-  margin: 30px;
+  /* margin: 30px; */
 }
 
 .terms {
-  display: grid;
-  grid-auto-flow: row;
-  grid-row-gap: 20px;
+  padding: 0 70px 70px;
 }
 
 .minihead {
@@ -32,8 +30,11 @@
 .flexContent p {
   display: grid;
   font-family: var(--font-work);
+  font-size: 18px;
 }
-
+.sub_para {
+  font-size: 18px;
+}
 .dot {
   color: #00a9ff;
 }
@@ -79,10 +80,16 @@
   }
 }
 @media (min-width: 320px) and (max-width: 650px) {
+  .terms {
+    padding: 0 20px 20px;
+  }
+
   .maingrid {
     display: unset;
   }
-
+  .sub_para {
+    font-size: 12px;
+  }
   .subgrid {
     display: grid;
     grid-auto-flow: row; /* Ensure grid items flow in rows */
