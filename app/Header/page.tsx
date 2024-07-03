@@ -34,6 +34,16 @@ export default function Page() {
               <Image src="/logo.svg" alt="headerlogo" width={152} height={32} />
             </Link>
           </div>
+          <div className={styles.header_pages}>
+            <Link href="/">
+              {" "}
+              <p>Home</p>
+            </Link>
+            <p>About us</p>
+            <Link href="/Blog">
+              <p>Blog</p>
+            </Link>
+          </div>
           <div className={styles.header_button}>
             <button id="scrollButton">Get in touch</button>
           </div>

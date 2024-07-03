@@ -33,6 +33,19 @@
   height: 2px;
   background-color: #cbecfd;
 }
+.header_pages {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  font-family: var(--font-work);
+  cursor: pointer;
+}
+.header_pages p {
+  color: #777777;
+}
+.header_pages p:nth-child(1) {
+  color: #00a9ff;
+}
 
 /* Mobile View */
 @media (min-width: 320px) and (max-width: 650px) {

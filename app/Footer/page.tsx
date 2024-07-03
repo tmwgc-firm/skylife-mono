@@ -28,7 +28,7 @@ export default function page() {
               height={40}
             />
           </div>
-
+          <div className={styles.code}></div>
           <p>
             Welcome to <span>SKY FINANCIAL</span>, where we prioritize
             protecting your future above all else. Our About Us section offers a
@@ -39,6 +39,7 @@ export default function page() {
             [Agency Name], we&apos;re here to guide you toward a future of
             confidence and security.
           </p>
+          <div className={styles.code}></div>
           <div className={styles.footer_details}>
             <div className={styles.footer_phone}>
               <Image

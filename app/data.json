@@ -95,5 +95,47 @@
     {
       "name": "Real news"
     }
+  ],
+  "latest": [
+    {
+      "content": "Expert raises $13 billion global private equity fund",
+      "strategy": "Marketing",
+      "contentdate": "June 22, 2024",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst"
+    },
+    {
+      "content": "Across its target sectors and regions, Experts will seek",
+      "strategy": "Finance",
+      "contentdate": "June 23, 2024",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst"
+    },
+    {
+      "content": "Expert raises $13 billion global private equity fund",
+      "strategy": "Marketing",
+      "contentdate": "June 24, 2024",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst"
+    },
+    {
+      "content": "Across its target sectors and regions, Experts will seek",
+      "strategy": "Insurance",
+      "contentdate": "June 25, 2024",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst"
+    },
+    {
+      "content": "Expert raises $13 billion global private equity fund",
+      "strategy": "strategy",
+      "contentdate": "June 26, 2024",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst"
+    }
   ]
 }

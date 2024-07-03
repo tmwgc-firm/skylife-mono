@@ -70,6 +70,11 @@
   grid-auto-flow: column;
   gap: 50px;
 }
+.code {
+  width: 1px;
+  background-color: #cbedff;
+  height: 100px;
+}
 #terms-link,
 #privacy-link {
   text-decoration: none;
@@ -122,6 +127,9 @@
   }
   .footer_copyright p {
     font-size: 14px;
+  }
+  .code {
+    display: none;
   }
 }
 
