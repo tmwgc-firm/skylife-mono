@@ -1,0 +1,99 @@
+{
+  "blogs": [
+    {
+      "image": "/frameone.jpg",
+      "heading": "Insurance",
+      "title": "Expert raises $13 billion global private equity fund",
+      "para": "Across its target sectors and regions, Experts will seek to invest in well-positioned companies with the potential for further operationa",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst",
+      "date": "June 24, 2024"
+    },
+    {
+      "image": "/frametwo.jpg",
+      "heading": "Insurance",
+      "title": "Expert raises $13 billion global private equity fund",
+      "para": "Across its target sectors and regions, Experts will seek to invest in well-positioned companies with the potential for further operationa",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst",
+      "date": "June 24, 2024"
+    },
+    {
+      "image": "/framethree.jpg",
+      "heading": "Insurance",
+      "title": "Expert raises $13 billion global private equity fund",
+      "para": "Across its target sectors and regions, Experts will seek to invest in well-positioned companies with the potential for further operationa",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst",
+      "date": "June 24, 2024"
+    },
+    {
+      "image": "/framefour.jpg",
+      "heading": "Insurance",
+      "title": "Expert raises $13 billion global private equity fund",
+      "para": "Across its target sectors and regions, Experts will seek to invest in well-positioned companies with the potential for further operationa",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst",
+      "date": "June 24, 2024"
+    },
+    {
+      "image": "/framefive.jpg",
+      "heading": "Insurance",
+      "title": "Expert raises $13 billion global private equity fund",
+      "para": "Across its target sectors and regions, Experts will seek to invest in well-positioned companies with the potential for further operationa",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst",
+      "date": "June 24, 2024"
+    },
+    {
+      "image": "/framesix.jpg",
+      "heading": "Insurance",
+      "title": "Expert raises $13 billion global private equity fund",
+      "para": "Across its target sectors and regions, Experts will seek to invest in well-positioned companies with the potential for further operationa",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst",
+      "date": "June 24, 2024"
+    }
+  ],
+  "bloghead": [
+    {
+      "image": "/topbodyimage.jpg",
+      "heading": "Insurance",
+      "title": "Expert raises $13 billion global private equity fund",
+      "para": "Across its target sectors and regions, Experts will seek to invest in well-positioned companies with the potential for further operational improvement and partner with management teams to create value through revenue and earnings growth. ",
+      "imagetwo": "/profileblog.svg",
+      "imagename": "Heisenberg",
+      "imagedesc": "Business analyst",
+      "date": "June 24, 2024"
+    }
+  ],
+  "blogpagenation": [
+    {
+      "name": "All posts"
+    },
+    {
+      "name": "Finance"
+    },
+    {
+      "name": "Marketing"
+    },
+    {
+      "name": "Strategy"
+    },
+    {
+      "name": "Banking"
+    },
+    {
+      "name": "Business"
+    },
+    {
+      "name": "Real news"
+    }
+  ]
+}

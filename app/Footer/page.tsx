@@ -9,13 +9,15 @@ export default function page() {
       <div className={styles.footer_one}>
         <div className={styles.footer_top}>
           <div className={styles.footer_image_desk}>
-            <Image
-              src="/footer-logo.svg"
-              id="img-desk"
-              alt="footerlogo"
-              width={90}
-              height={108}
-            />
+            <Link href="/Blog">
+              <Image
+                src="/footer-logo.svg"
+                id="img-desk"
+                alt="footerlogo"
+                width={90}
+                height={108}
+              />
+            </Link>
           </div>
           <div className={styles.footer_image_mobile}>
             <Image
