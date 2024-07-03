@@ -107,8 +107,16 @@ export default function Pages() {
         </div>
         {/* second phase  */}
         <div className={styles.secondphase}>
-          <div>
+          <div className={styles.animate_desk}>
             <Image src="/anime1.svg" alt="animation" width={584} height={444} />
+          </div>
+          <div className={styles.animate_mob}>
+            <Image
+              src="/animate-mob.svg"
+              alt="animation"
+              width={312}
+              height={340}
+            />
           </div>
           <div className={styles.secondphase_para}>
             <div className={styles.secondphase_subpara_one}>

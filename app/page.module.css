@@ -74,6 +74,12 @@
   gap: 10px;
   font-family: var(--font-work);
 }
+.animate_desk {
+  display: block;
+}
+.animate_mob {
+  display: none;
+}
 
 .get_in {
   cursor: pointer;
@@ -645,6 +651,12 @@ details[open] .accordion_header {
   }
   .svg_arr {
     display: grid;
+  }
+  .animate_desk {
+    display: none;
+  }
+  .animate_mob {
+    display: block;
   }
   .secondphase {
     grid-auto-flow: row;
