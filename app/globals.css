@@ -7,6 +7,9 @@ li a {
     text-decoration: none;
 }
 
+ji {
+}
+
 body {
     margin: 0;
 
@@ -128,15 +131,15 @@ a {
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 button {
-  font-family: var(--font-work);
+	font-family: var(--font-work);
 }
