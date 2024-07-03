@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./page.module.css";
 import Header from "./Header/page";
 import Form from "./Form/page";
@@ -9,6 +9,26 @@ import FAQSection from "./Faq/page";
 import Image from "next/image";
 
 export default function pages() {
+  useEffect(() => {
+    const scrollButton = document.getElementById("regPage");
+
+    const scrollToFormPage = () => {
+      const formPage = document.getElementById("formPage")?.offsetTop;
+
+      window.scrollTo({
+        top: formPage,
+        behavior: "smooth",
+      });
+    };
+
+    if (scrollButton) {
+      scrollButton.addEventListener("click", scrollToFormPage);
+      return () => {
+        scrollButton.removeEventListener("click", scrollToFormPage);
+      };
+    }
+  }, []);
+
   return (
     <>
       <div>
@@ -41,7 +61,7 @@ export default function pages() {
                   we can help you achieve peace of mind and financial security.
                 </p>
               </div>
-              <div className={styles.buttontwo}>
+              <div className={styles.buttontwo} id="regPage">
                 <div className={styles.get_in}>
                   <p>Get in touch</p>
                 </div>
@@ -75,7 +95,7 @@ export default function pages() {
                 can help you achieve peace of mind and financial security.
               </p>
             </div>
-            <div className={styles.buttontwo}>
+            <div className={styles.buttontwo} id="regPage">
               <div className={styles.get_in}>
                 <p>Get in touch</p>
               </div>

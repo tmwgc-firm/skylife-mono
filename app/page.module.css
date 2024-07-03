@@ -69,6 +69,7 @@
 .buttontwo {
   color: #00a9ff;
   display: flex;
+  cursor: pointer;
   /* align-items: center; */
   gap: 10px;
   font-family: var(--font-work);
@@ -639,6 +640,7 @@ details[open] .accordion_header {
   .buttontwo {
     display: flex;
     gap: 10px;
+    cursor: pointer;
     /* align-items: center; */
   }
   .svg_arr {
@@ -648,7 +650,7 @@ details[open] .accordion_header {
     grid-auto-flow: row;
     gap: 25px;
     place-items: center;
-    padding: 0 0 0 25px;
+    padding: 0 10px 0 25px;
   }
 
   .secondphase img {
@@ -769,7 +771,7 @@ details[open] .accordion_header {
 
   .thirdphase_form {
     width: unset;
-    height: 436px;
+    /* height: 436px; */
     padding: 20px;
     margin-top: 24px;
   }

@@ -8,9 +8,14 @@
   border-radius: 10px;
   gap: 10px;
 }
+
+.error-container {
+  border: 1px solid red;
+}
 .input_gap {
   display: grid;
-  row-gap: 10px;
+  grid-auto-flow: column;
+  column-gap: 24px;
 }
 .form .input_form_message {
   border: 1px solid #dddddd;
@@ -31,7 +36,7 @@
 }
 .overall_form {
   display: grid;
-  grid-auto-flow: column;
+  /* grid-auto-flow: column; */
   column-gap: 20px;
   row-gap: 25px;
 }
@@ -76,7 +81,8 @@
 }
 .req {
   display: grid;
-  row-gap: 5px;
+  column-gap: 24px;
+  grid-auto-flow: column;
 }
 
 /* Mobile View  */
@@ -93,6 +99,16 @@
     display: grid;
     justify-content: flex-start;
     column-gap: 10px;
+  }
+  .input_gap {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 14px;
+  }
+  .req {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 14px;
   }
 }
 

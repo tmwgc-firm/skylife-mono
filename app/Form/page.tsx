@@ -154,58 +154,60 @@ export default function Form() {
 
               <div className={styles.input_gap}>
                 <div className={styles.req}>
-                  <div className={styles.input_form}>
-                    <div>
-                      <Image
-                        src="/formmail.svg"
-                        alt="user"
-                        width={20}
-                        height={20}
-                      />
-                    </div>
-                    <div className={styles.inputGroup}>
-                      <input
-                        placeholder="E-mail"
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        className="input"
-                        required
-                      />
-                    </div>
-                  </div>
                   <div>
+                    <div className={styles.input_form}>
+                      <div>
+                        <Image
+                          src="/formmail.svg"
+                          alt="user"
+                          width={20}
+                          height={20}
+                        />
+                      </div>
+                      <div className={styles.inputGroup}>
+                        <input
+                          placeholder="E-mail"
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className="input"
+                          required
+                        />
+                      </div>
+                    </div>
                     {errors.email && (
                       <span className={styles.error}>{errors.email}</span>
                     )}
                   </div>
-                  <div className={styles.input_form}>
-                    <div>
-                      <Image
-                        src="/formphone.svg"
-                        alt="user"
-                        width={20}
-                        height={20}
-                      />
+                  <div>
+                    <div className={styles.input_form}>
+                      <div>
+                        <Image
+                          src="/formphone.svg"
+                          alt="user"
+                          width={20}
+                          height={20}
+                        />
+                      </div>
+                      <div className={styles.inputGroup}>
+                        <input
+                          placeholder="Phone"
+                          type="text"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className="input"
+                          required
+                        />
+                      </div>
                     </div>
-                    <div className={styles.inputGroup}>
-                      <input
-                        placeholder="Phone"
-                        type="text"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        className="input"
-                        required
-                      />
-                    </div>
-                  </div>{" "}
-                  {errors.phone && (
-                    <span className={styles.error}>{errors.phone}</span>
-                  )}
+                    {errors.phone && (
+                      <span className={styles.error}>{errors.phone}</span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -222,7 +224,7 @@ export default function Form() {
                     className="input"
                     required
                   />
-                </div>{" "}
+                </div>
               </div>
               {errors.message && (
                 <span className={styles.error}>{errors.message}</span>
