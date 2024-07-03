@@ -8,7 +8,7 @@ import Link from "next/link";
 import FAQSection from "./Faq/page";
 import Image from "next/image";
 
-export default function pages() {
+export default function Pages() {
   useEffect(() => {
     const scrollButton = document.getElementById("regPage");
 
