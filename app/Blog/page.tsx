@@ -21,7 +21,7 @@ export default function page() {
           <div className={styles.blog_one}>
             {blogheads.map((bloghead, index) => (
               <div key={index} className={styles.blog_one_sub}>
-                <div>
+                <div className={styles.leader_image}>
                   <Image
                     src={bloghead.image}
                     alt="image"
@@ -113,14 +113,14 @@ export default function page() {
                     <div>
                       <h5>{blogtable.content}</h5>
                     </div>
-                    <div>
+                    <div className={styles.str}>
                       <p>{blogtable.strategy}</p>
                     </div>
-                    <div>
+                    <div className={styles.con}>
                       <p>{blogtable.contentdate}</p>
                     </div>
                     <div className={styles.profile_details}>
-                      <div>
+                      <div className={styles.table_name}>
                         <h6>{blogtable.imagename}</h6>
                         <p>{blogtable.imagedesc}</p>
                       </div>
@@ -132,6 +132,16 @@ export default function page() {
                           height={32}
                         />
                       </div>
+                    </div>
+                    <div className={styles.table_mobile}>
+                      <p>{blogtable.strategy}</p>
+                      <p>{blogtable.contentdate}</p>
+                      <Image
+                        src={blogtable.imagetwo}
+                        alt="image-profile"
+                        width={32}
+                        height={32}
+                      />
                     </div>
                   </div>
                 </div>
