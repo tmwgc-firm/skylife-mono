@@ -56,10 +56,10 @@
     background-color: #eef6ff;
   }
 
-  .header img {
+  /* .header img {
     width: 150px;
     width: 150px;
-  }
+  } */
 
   .header {
     display: grid;
@@ -84,7 +84,10 @@
     background: none; /* Remove default button styling */
     border: none;
     cursor: pointer;
+    width: unset;
+    padding: 0 10px 0 0;
   }
+
   .scroll {
     display: none;
   }
