@@ -46,6 +46,9 @@
 .header_pages p:nth-child(1) {
   color: #00a9ff;
 }
+.toggle {
+  display: none;
+}
 
 /* Mobile View */
 @media (min-width: 320px) and (max-width: 650px) {
@@ -70,6 +73,112 @@
     height: 35px;
     padding: 12px, 24px, 12px, 24px;
     border-radius: 10px;
+  }
+  .header_button .toggle {
+    display: block;
+    background: none;
+    position: absolute; /* Ensure the button stays fixed */
+    top: 16px; /* Adjust as needed */
+    right: 16px; /* Adjust as needed */
+    z-index: 1001; /* Higher than the mobile menu */
+    background: none; /* Remove default button styling */
+    border: none;
+    cursor: pointer;
+  }
+  .scroll {
+    display: none;
+  }
+  .header_pages {
+    display: none;
+  }
+  .mobile_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 360px;
+    background-color: white; /* Adjust as needed */
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    z-index: 1000; /* Adjust as needed */
+  }
+
+  .mobile_menu.active {
+    transform: translateY(0);
+  }
+  .menus {
+    display: grid;
+    justify-items: center;
+    padding: 80px 0 0 0;
+    font-family: var(--font-work);
+    row-gap: 10px;
+  }
+  .menus a {
+    color: black;
+  }
+  .home {
+    display: grid;
+    align-items: center;
+    /* grid-auto-flow: column; */
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  .home_blog {
+    display: grid;
+    align-items: center;
+    /* grid-auto-flow: column; */
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 100%;
+    column-gap: 10px;
+    padding: 10px;
+  }
+  .home_blog a {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+  }
+  .home:hover {
+    background-color: #cbecfd;
+    border-radius: 10px;
+  }
+  .home_blog:hover {
+    background-color: #cbecfd;
+    border-radius: 10px;
+  }
+  .mobile_rights {
+    font-family: var(--font-work);
+    color: #7d7b7b;
+    font-size: 12px;
+  }
+  .mobile_terms_policie {
+    font-family: var(--font-work);
+    color: #00a9ff;
+    font-size: 12px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+  .mobile_getintouch button {
+    outline: none;
+    border: none;
+    background: #00a9ff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .mobile_grid {
+    display: grid;
+    row-gap: 50px;
+    padding: 20px;
+  }
+  .header_footer {
+    display: grid;
+    row-gap: 15px;
   }
 }
 
