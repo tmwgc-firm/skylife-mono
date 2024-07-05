@@ -20,34 +20,36 @@ export default function page() {
           </div>
           <div className={styles.blog_one}>
             {blogheads.map((bloghead, index) => (
-              <div key={index} className={styles.blog_one_sub}>
-                <div className={styles.leader_image}>
-                  <Image
-                    src={bloghead.image}
-                    alt="image"
-                    width={740}
-                    height={360}
-                  />
-                </div>
-                <div className={styles.header_right}>
-                  <p>{bloghead.heading}</p>
-                  <h4>{bloghead.title}</h4>
-                  <p>{bloghead.para}</p>
-                  <div className={styles.profile_one}>
+              <Link href={`/Blog/${index}`}>
+                <div key={index} className={styles.blog_one_sub}>
+                  <div className={styles.leader_image}>
                     <Image
-                      src={bloghead.imagetwo}
-                      alt="image-profile"
-                      width={32}
-                      height={32}
+                      src={bloghead.image}
+                      alt="image"
+                      width={740}
+                      height={360}
                     />
-                    <div className={styles.name_desc}>
-                      <h5>{bloghead.imagename}</h5>
-                      <p>{bloghead.imagedesc}</p>
+                  </div>
+                  <div className={styles.header_right}>
+                    <p>{bloghead.heading}</p>
+                    <h4>{bloghead.title}</h4>
+                    <p>{bloghead.para}</p>
+                    <div className={styles.profile_one}>
+                      <Image
+                        src={bloghead.imagetwo}
+                        alt="image-profile"
+                        width={32}
+                        height={32}
+                      />
+                      <div className={styles.name_desc}>
+                        <h5>{bloghead.imagename}</h5>
+                        <p>{bloghead.imagedesc}</p>
+                      </div>
+                      <p>{bloghead.date}</p>
                     </div>
-                    <p>{bloghead.date}</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className={styles.blog_two}>
