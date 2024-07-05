@@ -20,7 +20,7 @@ export default function page() {
           </div>
           <div className={styles.blog_one}>
             {blogheads.map((bloghead, index) => (
-              <Link href={`/Blog/${index}`}>
+              <Link href={`/Blog/${index}`} key={index}>
                 <div key={index} className={styles.blog_one_sub}>
                   <div className={styles.leader_image}>
                     <Image
