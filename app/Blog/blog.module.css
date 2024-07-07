@@ -143,6 +143,9 @@
 .table_mobile {
   display: none;
 }
+
+/* Blog id page one  */
+
 @media (min-width: 320px) and (max-width: 650px) {
   .blog_one_sub {
     display: grid;
