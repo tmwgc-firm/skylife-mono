@@ -66,7 +66,7 @@
 	width: 100%;
 }
 .read_container {
-	padding: 40px 80px;
+	padding: 40px;
 }
 
 .read_more_text {
@@ -219,5 +219,10 @@ ul .b {
     max-width: 269px;
     width: 100%; */
 		display: none;
+	}
+
+	.read_item {
+		display: grid;
+		grid-auto-flow: row;
 	}
 }
