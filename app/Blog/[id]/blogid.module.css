@@ -225,4 +225,11 @@ ul .b {
 		display: grid;
 		grid-auto-flow: row;
 	}
+	/* .blog_bodyimage img {
+		width: 50%;
+		height: 280px;
+	} */
+	.blog_id_page {
+		display: none;
+	}
 }
