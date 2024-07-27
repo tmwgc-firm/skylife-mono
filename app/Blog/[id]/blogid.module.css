@@ -62,13 +62,15 @@
 .pro_details {
   max-width: 100%;
 }
+
 /* .side_bar {
   padding-left: 30px;
   max-width: 269px;
   width: 100%; */
 /* } */
+
 .read_container {
-  padding: 40px 80px;
+  padding: 40px;
 }
 
 .read_more_text {

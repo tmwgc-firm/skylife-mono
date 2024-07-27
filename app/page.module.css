@@ -706,6 +706,7 @@ details[open] .accordion_header {
     display: grid;
     grid-auto-flow: row;
     row-gap: 0;
+    justify-content: center;
   }
   .flex_one {
     padding: 10px;
