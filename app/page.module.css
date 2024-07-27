@@ -217,6 +217,7 @@
   max-width: 100%;
   gap: 32px;
   align-items: end;
+  justify-items: center;
 }
 .flex_one {
   border: 1px solid #00a9ff;

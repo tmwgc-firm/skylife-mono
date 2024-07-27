@@ -93,7 +93,7 @@ const Article = (params: any) => {
                     <h2 id="section-2">{yr.historyauthor}</h2>
                     <p>{yr.summary}</p>
                     <p>{yr.summarytwo}</p>
-                    <Image src={yr.pic} alt="img" width={920} height={280} />
+                    <Image src={yr.pic} alt="img" width={920} height={320} />
                     <div className={styles.pic}>
                       <Image
                         src={yr.pictwo}
@@ -139,7 +139,7 @@ const Article = (params: any) => {
                   <div key={index} className={styles.conclusion}>
                     <h2 id="section-3">{conclu.linkhead}</h2>
                     <p>{conclu.linkpara}</p>
-                    <div>
+                    <div className={styles.conclu_links}>
                       <ul className={styles.b}>
                         <li>{conclu.link}</li>
                       </ul>
@@ -151,7 +151,7 @@ const Article = (params: any) => {
           </div>
           <div className={styles.side_bar}>
             {result?.sidebars.map((sidebar, index) => (
-              <div key={index}>
+              <div key={index} className={styles.sidebar_heads}>
                 <p id={`sidebar-${index + 1}`}>{sidebar.name}</p>
               </div>
             ))}
@@ -180,7 +180,7 @@ const Article = (params: any) => {
                     <p>{profile.img_desc}</p>
                   </div>
                 </div>
-                <p>{profile.date}</p>
+                <p className={styles.prof_date}>{profile.date}</p>
               </div>
             </div>
           ))}

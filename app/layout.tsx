@@ -1,10 +1,30 @@
 import type { Metadata } from "next";
 import { Roboto_Serif, Work_Sans } from "next/font/google";
+import localfont from "next/font/local";
 import "./globals.css";
 import Footerpage from "./Footer/page";
 
 const inter = Roboto_Serif({ subsets: ["latin"], variable: "--font-roboto" });
 const work = Work_Sans({ subsets: ["latin"], variable: "--font-work" });
+
+const gilroy = localfont({
+  src: [
+    {
+      path: "../public/Fonts/Gilroy-Bold.woff",
+      weight: "700",
+    },
+  ],
+  variable: "--font-gilroy",
+});
+const gilroysmall = localfont({
+  src: [
+    {
+      path: "../public/Fonts/Gilroy-Medium.woff",
+      weight: "100",
+    },
+  ],
+  variable: "--font-small",
+});
 
 export const metadata: Metadata = {
   title: "Sky Financial | Life Insurance Partner.",
@@ -19,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${work.variable}`}>
+      <body
+        className={`${inter.variable} ${work.variable} ${gilroy.variable} ${gilroysmall.variable}`}
+      >
         {children}
         <Footerpage />
       </body>
