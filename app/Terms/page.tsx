@@ -43,7 +43,7 @@ const Page: React.FC = () => {
                 >
                   <h4
                     style={{
-                      fontFamily: "var(--font-roboto)",
+                      fontFamily: "var(--font-gilroy)",
                       fontSize: "16px",
                     }}
                   >
@@ -52,7 +52,7 @@ const Page: React.FC = () => {
                   <p
                     className="sub_para"
                     style={{
-                      fontFamily: "var(--font-work)",
+                      fontFamily: "var(--font-small)",
                       color: "#777777",
                     }}
                   >

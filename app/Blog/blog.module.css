@@ -230,3 +230,20 @@
     font-size: 12px;
   }
 }
+@media (min-width: 601px) and (max-width: 1024px) {
+  .leader_image img {
+    width: 700px;
+  }
+  .blog_one_sub {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .blog_two {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .blog_three {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}

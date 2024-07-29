@@ -14,7 +14,7 @@
   border-bottom: 1px solid #00a9ff;
   border-top: 1px solid #00a9ff;
   color: #00a9ff;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
@@ -30,7 +30,7 @@
 .faq_border {
   border-radius: 10px;
   border: 1px solid #cbecfd;
-  max-width: 688px;
+  max-width: 610px;
 }
 
 .question {
@@ -49,7 +49,7 @@
 
   line-height: 24px;
   font-weight: 400;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 
 .answer {
@@ -64,7 +64,7 @@
 .answer p {
   margin: 0;
   font-size: 14px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 
 .rightsection {
@@ -83,7 +83,7 @@
   display: grid;
   text-align: center;
   color: #777777;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .rightsection p:nth-child(1) {
   color: #00a9ff;
@@ -96,13 +96,13 @@
 
   padding: 5px 0px 5px 0px;
   max-width: fit-content;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
   border-top: 1px solid #00a9ff;
   border-bottom: 1px solid #00a9ff;
 }
 .rightsection h2 {
   font-size: 40px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
   font-weight: 700;
   max-width: 30rem;
 }

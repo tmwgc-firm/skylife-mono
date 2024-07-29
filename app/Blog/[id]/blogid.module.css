@@ -407,3 +407,26 @@ ul .b {
     font-size: 14px;
   }
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .side_bar {
+    display: none;
+  }
+  .blog_hero {
+    overflow-y: hidden;
+    padding: 0;
+    max-height: none;
+    display: grid;
+    row-gap: 15px;
+  }
+  .read_item {
+    display: grid;
+    grid-auto-flow: unset;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .pro_details {
+    max-width: fit-content;
+  }
+}

@@ -14,10 +14,10 @@
   row-gap: 20px;
 }
 .minihead p {
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .minihead h2 {
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 .flexContent {
   display: grid;
@@ -25,11 +25,11 @@
 }
 .flexContent h4 {
   display: grid;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 .flexContent p {
   display: grid;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
   font-size: 18px;
 }
 .sub_para {

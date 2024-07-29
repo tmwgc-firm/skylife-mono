@@ -28,23 +28,23 @@
   display: grid;
   row-gap: 20px;
   padding: 20px 0;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .minihead p {
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .minihead h2 {
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 .gridContent {
   display: grid;
   row-gap: 10px;
 }
 .gridContent h4 {
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 .gridContent p {
-  font-family: var(--font-work);
+  font-family: var(--font-small);
   color: #777777;
   /* font-size: 18px; */
 }

@@ -65,7 +65,7 @@ export default function Pages() {
                 <div className={styles.get_in}>
                   <p>Get in touch</p>
                 </div>
-                <div>
+                <div className={styles.arrow_down}>
                   <Image src="/Arrow.svg" alt="arrow" width={24} height={24} />
                 </div>
               </div>

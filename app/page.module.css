@@ -35,12 +35,12 @@
 }
 .imagecontent_welcome h1 {
   max-width: 35rem;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
   font-size: 64px;
   font-weight: 700;
 }
 .imagecontent_welcome p {
-  font-family: var(--font-work);
+  font-family: var(--font-small);
   font-weight: 500;
   color: #00a9ff;
   size: 12px;
@@ -63,7 +63,9 @@
   font-size: 14px;
   line-height: 19px;
   row-gap: 8px;
-  font-family: var(--font-work);
+}
+.imagecontent_para p {
+  font-family: var(--font-small);
 }
 
 .buttontwo {
@@ -72,7 +74,7 @@
   cursor: pointer;
   /* align-items: center; */
   gap: 10px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .animate_desk {
   display: block;
@@ -83,6 +85,13 @@
 
 .get_in {
   cursor: pointer;
+  max-width: 91px;
+}
+.get_in p {
+  font-family: var(--font-small);
+}
+.arrow_down {
+  max-width: 30px;
 }
 
 /* Second Phase  */
@@ -109,14 +118,14 @@
   font-weight: 500;
   font-size: 18px;
 
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .secondphase_subpara_one p:nth-child(2) {
   color: #333333;
   font-weight: 700;
   font-size: 40px;
 
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 
 .secondphase_subpara_two {
@@ -124,19 +133,19 @@
   row-gap: 20px;
   color: #777777;
   font-size: 14px;
-  font-family: var(--font-work);
 }
 
 .secondphase_subpara_two p {
   color: #777777;
   max-width: 38rem;
   font-size: 14px;
+  font-family: var(--font-small);
 }
 
 .secondphase_subpara_one h1 {
   max-width: 28rem;
   font-weight: 700;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 .dot_two {
   color: #00a9ff;
@@ -236,34 +245,34 @@
   color: #777777;
   font-size: 14px;
   font-weight: 500;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .flex_one p:nth-child(3) {
   color: #333333;
   font-size: 20px;
   font-weight: 600;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 .flex_one p:nth-child(4) {
   color: #777777;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .flex_one p:nth-child(5) {
   color: #777777;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .flex_one p:nth-child(6) {
   color: #777777;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .flex_one:hover {
   background: #00a9ff;
@@ -310,34 +319,34 @@
   color: #777777;
   font-size: 14px;
   font-weight: 500;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .flex_two p:nth-child(3) {
   color: #333333;
   font-size: 20px;
   font-weight: 600;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 .flex_two p:nth-child(4) {
   color: #777777;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .flex_two p:nth-child(5) {
   color: #777777;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .flex_two p:nth-child(6) {
   color: #777777;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .flex_two:hover {
   background-color: #00a9ff;
@@ -359,7 +368,7 @@
   padding: 80px;
   column-gap: 40px;
   background-color: #ecfaff;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 
 .thirdphase_para {
@@ -379,13 +388,14 @@
   color: #777777;
   font-weight: 500;
   font-size: 14px;
+  font-family: var(--font-small);
 }
 
 .thirdphase_para h5 {
   font-weight: 700;
   max-width: 50rem;
   font-size: 32px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 
 .questionmark,
@@ -519,7 +529,7 @@
 
 .accordion {
   max-width: 590px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 
 .accordion_item {
@@ -542,7 +552,7 @@
 
 .accordion_title {
   font-size: 16px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 
 .accordion_icon {
@@ -570,7 +580,7 @@ details[open] .accordion_header {
 .fourth_sub_two {
   display: grid;
   padding-top: 27px;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
   gap: 24px;
   text-align: center;
   justify-content: center;
@@ -583,12 +593,12 @@ details[open] .accordion_header {
 }
 
 .fourth_sub_two h1 {
-  font-family: var(--font-roboto);
+  font-family: var(--font-gilroy);
 }
 
 .fourth_sub_two h5 {
   color: #00a9ff;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .fourth_sub_two span {
   color: #00a9ff;
@@ -596,7 +606,7 @@ details[open] .accordion_header {
 .fourth_sub_two p {
   text-align: center;
   max-width: 30rem;
-  font-family: var(--font-work);
+  font-family: var(--font-small);
 }
 .tab_imagecontent {
   display: none;
@@ -646,7 +656,7 @@ details[open] .accordion_header {
   }
   .buttontwo {
     display: flex;
-    gap: 10px;
+    gap: 0;
     cursor: pointer;
     /* align-items: center; */
   }
